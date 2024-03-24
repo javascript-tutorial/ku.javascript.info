@@ -55,13 +55,14 @@
 
 
 
-For instance, in-browser JavaScript is able to:
+بۆ نموونە جاڤاسکڕێپت لەناو وێبگەڕەکەدا توانای هەیە:
 
-- Add new HTML to the page, change the existing content, modify styles.
-- React to user actions, run on mouse clicks, pointer movements, key presses.
-- Send requests over the network to remote servers, download and upload files (so-called [AJAX](https://en.wikipedia.org/wiki/Ajax_(programming)) and [COMET](https://en.wikipedia.org/wiki/Comet_(programming)) technologies).
-- Get and set cookies, ask questions to the visitor, show messages.
-- Remember the data on the client-side ("local storage").
+- ئێچ تی ئێم ئێڵ یان HTML ی نوێ زیاد بکە بۆ لاپەڕەکە، ناوەڕۆکەکان وە ستایلەکان بگۆڕێت.
+- کاردانەوە بەرامبەر بە کردارەکانی بەکارهێنەر بێت، کرتە لە ماوس کردن، جوڵانەوەی ماوس، فشار دان دوکمەکانی کیبۆرد، بۆ هەموو ئەمانە دەتوانن کاردانەوەیکی تایبەت ئامادە وە جێبەجێکەن
+- ناردنی داواکاری لە ڕێگەی تۆڕەوە بۆ سێرڤەرە دوورەکان، دانلود و ئاپلۆد فایلەکان (کە پێی دەوترێت [AJAX](https://en.wikipedia.org/wiki/Ajax_(programming)). و تەکنەلۆژیای [COMET](https://en.wikipedia.org/wiki/Comet_(programming))
+
+- کووکی وەرگرتن و ڕێکخستن، پرسیار لە سەردانکەرەکانی ماڵپەڕەکە بکە، نامەکان پیشان بدە.
+- داتاکانی لایەنی کلاینت ("Local Storage") پاشەکەوت بکە.
 
 ## What CAN'T in-browser JavaScript do?
 
