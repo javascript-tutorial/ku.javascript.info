@@ -4,7 +4,8 @@
 
 ## جاڤاسکڕێپت چییە؟
 
-*JavaScript* was initially created to "make web pages alive".
+*جاڤاسکڕێپت* لە سەرەتادا بۆ "بە زیندوویکردنی لاپەڕەکانی وێب" دروستکرا.
+
 
 The programs in this language are called *scripts*. They can be written right in a web page's HTML and run automatically as the page loads.
 
