@@ -64,17 +64,17 @@
 - کووکی وەرگرتن و ڕێکخستن، پرسیار لە سەردانکەرەکانی ماڵپەڕەکە بکە، نامەکان پیشان بدە.
 - داتاکانی لایەنی کلاینت ("Local Storage") پاشەکەوت بکە.
 
-## What CAN'T in-browser JavaScript do?
+## جاڤاسکڕێپت لە وێبگەڕەکانە ناتوانێت چی بکات؟
 
-JavaScript's abilities in the browser are limited to protect the user's safety. The aim is to prevent an evil webpage from accessing private information or harming the user's data.
+تواناکانی جاڤاسکڕێپت لە وێبگەڕەکاندا سنووردارە بۆ پاراستنی سەلامەتی بەکارهێنەر. ئامانج لێی ڕێگریکردنە لە دەستگەیشتن بە زانیارییە تایبەتەکان یان زیانگەیاندن بە زانیارییەکانی بەکارهێنەر.
 
-Examples of such restrictions include:
+نموونەی ئەم سنووردارکردنانە بریتین لە:
 
-- JavaScript on a webpage may not read/write arbitrary files on the hard disk, copy them or execute programs. It has no direct access to OS functions.
+- جاڤاسکڕێپت لە وێب پەڕێکدا لەوانەیە فایلە ئارەزوومەندانە لەسەر هارد دیسکەکە بخوێنێتەوە/بنووسێت، کۆپییان بکات، یان بەرنامەکان ئێجرابکات. دەستڕاگەیشتنێکی ڕاستەوخۆی بە کارەکانی سیستەمی کارپێکردن نییە.
 
-    Modern browsers allow it to work with files, but the access is limited and only provided if the user does certain actions, like "dropping" a file into a browser window or selecting it via an `<input>` tag.
+    وێبگەڕە مۆدێرنەکان ڕێگەی پێدەدەن کار لەگەڵ فایلەکاندا بکات، بەڵام دەستڕاگەیشتن سنووردارە و تەنها لەو کاتەدا دابین دەکرێت کە بەکارهێنەر هەندێک کردار ئەنجام بدات، وەک "خستنەناو" فایلێک بۆ ناو پەنجەرەی وێبگەڕەکە یان هەڵبژاردنی لە ڕێگەی تاگی `<input>` .
 
-    There are ways to interact with the camera/microphone and other devices, but they require a user's explicit permission. So a JavaScript-enabled page may not sneakily enable a web-camera, observe the surroundings and send the information to the [NSA](https://en.wikipedia.org/wiki/National_Security_Agency).
+    ڕێگا هەیە بۆ کارلێککردن لەگەڵ کامێرا/مایکرۆفۆن و ئامێرەکانی تر، بەڵام پێویستیان بە مۆڵەتی بەکارهێنەری ڕوون هەیە. کەواتە لاپەڕەیەک کە جاڤاسکڕێپتی هەبێت ڕەنگە بە نهێنی کامێرای وێب چالاک نەکات و دەوروبەرەکەی نەبینێت و زانیاری بۆ [NSA](https://ckb.wikipedia.org/wiki/%D8%AF%DB%95%D8%B2%DA%AF%D8%A7%DB%8C_%D8%A6%D8%A7%D8%B3%D8%A7%DB%8C%D8%B4%DB%8C_%D9%86%DB%95%D8%AA%DB%95%D9%88%DB%95%DB%8C%DB%8C) نەنێرێت.
 - Different tabs/windows generally do not know about each other. Sometimes they do, for example when one window uses JavaScript to open the other one. But even in this case, JavaScript from one page may not access the other page if they come from different sites (from a different domain, protocol or port).
 
     This is called the "Same Origin Policy". To work around that, *both pages* must agree for data exchange and must contain special JavaScript code that handles it. We'll cover that in the tutorial.
