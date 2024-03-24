@@ -6,49 +6,54 @@
 
 *جاڤاسکڕێپت* لە سەرەتادا بۆ "بە زیندوویکردنی لاپەڕەکانی وێب" دروستکرا.
 
+بەرنامەکانی ئەم زمانە پێیان دەوترێت *scripts*. دەتوانرێت لە HTML ی پەڕەیکی وێب بنووسرێن و بە بارکردنی لاپەڕەکە بە شێوەیەکی ئۆتۆماتیکی کاربکەن.
+سکریپتەکان وەک دەقی سادە دابین دەکرێن و جێبەجێ دەکرێن.
 
-The programs in this language are called *scripts*. They can be written right in a web page's HTML and run automatically as the page loads.
+پێویستیان بە ئامادەکاری تایبەت یان کۆکردنەوە نییە بۆ ئەوەی کاربکەن.
 
-Scripts are provided and executed as plain text. They don't need special preparation or compilation to run.
+لەم لایەنەدا جاڤاسکڕێپت زۆر جیاوازە لە زمانێکی تر بە ناوی [جاڤا](https://ckb.wikipedia.org/wiki/%D8%AC%D8%A7%DA%A4%D8%A7_(%D8%B2%D9%85%D8%A7%D9%86%DB%8C_%D8%A8%DB%95%D8%B1%D9%86%D8%A7%D9%85%DB%95%D8%B3%D8%A7%D8%B2%DB%8C))
 
-In this aspect, JavaScript is very different from another language called [Java](https://en.wikipedia.org/wiki/Java_(programming_language)).
 
-```smart header="Why is it called <u>Java</u>Script?"
-When JavaScript was created, it initially had another name: "LiveScript". But Java was very popular at that time, so it was decided that positioning a new language as a "younger brother" of Java would help.
+```smart header="بۆچی پێی دەوترێت <u>جاڤا؟</u>script>"
+کاتێک جاڤاسکڕێپت دروستکرا، سەرەتا ناوێکی دیکەی هەبوو: "Livescript".بەڵام جاڤا لەو کاتەدا زۆر بەناوبانگ بوو، بۆیە بڕیاردرا کە جێگیرکردنی زمانێکی نوێ وەک "برایەکی بچووکتر"ی جاڤا یارمەتیدەر بێت.
 
-But as it evolved, JavaScript became a fully independent language with its own specification called [ECMAScript](http://en.wikipedia.org/wiki/ECMAScript), and now it has no relation to Java at all.
+بەڵام لەگەڵ پەرەسەندندا، جاڤاسکڕێپت بوو بە زمانێکی تەواو سەربەخۆ کە تایبەتمەندی خۆی هەبوو و بوو بە [ئێکماسکڕێپت](https://en.wikipedia.org/wiki/ECMAScript)،وە ئێستا بە هیچ شێوەیەک پەیوەندی بە جاڤاوە نییە.
 ```
 
-Today, JavaScript can execute not only in the browser, but also on the server, or actually on any device that has a special program called [the JavaScript engine](https://en.wikipedia.org/wiki/JavaScript_engine).
+ئەمڕۆ، جاڤاسکڕێپت دەتوانێت نەک تەنها لە وێبگەڕەکەدا کار بکات، بەڵکو لەسەر سێرڤەر، یان لە ڕاستیدا لەسەر هەر ئامێرێک کە بەرنامەیەکی تایبەتی هەبێت بە ناوی [JavaScript engine](https://en.wikipedia.org/wiki/JavaScript_engine).
 
-The browser has an embedded engine sometimes called a "JavaScript virtual machine".
+وێبگەڕەکە بزوێنەرێکی جێگیرکراوی هەیە، هەندێک جار پێی دەوترێت "ئامێری مەجازی جاڤاسکڕێپت".
 
-Different engines have different "codenames". For example:
+بزوێنەرە جیاوازەکان "کۆدناوی(codenames)" جیاوازیان هەیە. بۆ نموونە:
 
-- [V8](https://en.wikipedia.org/wiki/V8_(JavaScript_engine)) -- in Chrome, Opera and Edge.
-- [SpiderMonkey](https://en.wikipedia.org/wiki/SpiderMonkey) -- in Firefox.
-- ...There are other codenames like "Chakra" for IE, "JavaScriptCore", "Nitro" and "SquirrelFish" for Safari, etc.
 
-The terms above are good to remember because they are used in developer articles on the internet. We'll use them too. For instance, if "a feature X is supported by V8", then it probably works in Chrome, Opera and Edge.
+- [ڤی ٨](https://en.wikipedia.org/wiki/V8_(JavaScript_engine)) -- لە کرۆم و ئۆپێرا و ئێدج.
+- [ئێسپایدرمانکی](https://en.wikipedia.org/wiki/SpiderMonkey) -- لە فایرفاکس.
+-   کۆدناوی دیکەش هەن وەک "چاکرا" بۆ IE ،  "جاڤاسکڕێپت کۆر"، "نیترۆ" و "SquirreLish" بۆ سەفاری و هتد.
 
-```smart header="How do engines work?"
+-   باشە ئەو کۆدناوەکانی سەرەوە لەبیرمان بمێنێ چونکە لە بابەتەکانی گەشەپێدەران لە ئینتەرنێتدا بەکاردێت.ئێمەش بەکاریان دەهێنین. بۆ نموونە,ئەگەر "تایبەتمەندییەک X لەلایەن V8 پشتگیری بکرێت" ، پاشان ئەگەری زۆرە لە کرۆم و ئۆپێرا و ئێدجدا کار بکات
 
-Engines are complicated. But the basics are easy.
 
-1. The engine (embedded if it's a browser) reads ("parses") the script.
-2. Then it converts ("compiles") the script to machine code.
-3. And then the machine code runs, pretty fast.
+```smart header="بزوێنەرەکان چۆن کاردەکەن؟"
 
-The engine applies optimizations at each step of the process. It even watches the compiled script as it runs, analyzes the data that flows through it, and further optimizes the machine code based on that knowledge.
+بزوێنەرەکان ئاڵۆزن. بەڵام بنەماکان ئاسانن.
+
+1. بزوێنەرەکە (ئەگەر وێبگەڕێک بێت بزوێنەرەکە لە نێوخۆی جێگیربووە) سکریپتەکە دەخوێنێتەوە ("وە شیکاری دەکات").
+2. پاشان سکریپتەکە دەگۆڕێت بۆ کۆدی ماشین ("کامپایڵکردن").
+3. و پاشان کۆدی ماشین زۆر بە خێرایی کاردەکات.
+
+بزوێنەرەکە لە هەر هەنگاوێکدا هەوڵ ئەدات پرۆسەکە باشتر و خێراتر بکات. تەنانەت کاتێ کە ئێسکرێپتەکە کامپایڵ بووە بزوێنەرەکە کارکردنی ئێسکڕێپتەکە ئەگرێتە ژێرچاودێری ، ئەو زانیاریانە کە لە ڕێگای ئێسکڕێپت ئێمە تێن وە ئەچنیش شی دەکاتەوە ، وە بەپێی ئەم زانیاریەنە کە لە ڕێگای چاودێریکردن وە شی کردنەوەی دیتاکانی هات و چوو کراوەی ئێسکرێپتەکە کۆیکردەسەو کۆدی ماشینەکە باشتر و گونجاوتر دەکات بەپشتبەستن بەو زانیاریەکانی خۆی
 ```
 
-## What can in-browser JavaScript do?
+## جاڤاسکڕێپت لە ناو وێبگەڕە چی دەتوانێ بکات؟
 
-Modern JavaScript is a "safe" programming language. It does not provide low-level access to memory or the CPU, because it was initially created for browsers which do not require it.
+جاڤاسکڕێپتی مۆدێرن زمانێکی بەرنامەسازی "ئەمنە". دەستگەیشتن بە ئاستی نزم بۆ بیرگە یان CPU نادات چونکە لە سەرەتادا بۆ ئەو وێبگەڕانە دروستکراوە کە پێویستیان پێی نییە.
 
-JavaScript's capabilities greatly depend on the environment it's running in. For instance, [Node.js](https://wikipedia.org/wiki/Node.js) supports functions that allow JavaScript to read/write arbitrary files, perform network requests, etc.
+تواناکانی جاڤاسکڕێپت تا ڕادەیەکی زۆر پشت بەو ژینگەیە دەبەستێت کە تێیدا کاردەکات.[Node.js](https://ckb.wikipedia.org/wiki/%D9%86%DB%86%D8%AF_%D8%AC%DB%95%DB%8C_%D8%A6%DB%8E%D8%B3) پشتگیری لەو فانکشنەنە دەکات کە ڕێگە بە جاڤاسکڕێپت دەدەن فایلە دڵخوازەکان بخوێنێتەوە/بینووسێت، داواکاری تۆڕەکان دروست بکات و هتد.
 
-In-browser JavaScript can do everything related to webpage manipulation, interaction with the user, and the webserver.
+جاڤاسکڕێپت لە وێبگەڕەکەدا دەتوانێت هەموو ئەرکەکانی دەستکاریکردنی لاپەڕەکانی وێب، وەڵام دانەوەی داواکاریەکانی بەکارهێنەر و سێرڤەری وێب ئەنجام بدات.
+
+
 
 For instance, in-browser JavaScript is able to:
 
