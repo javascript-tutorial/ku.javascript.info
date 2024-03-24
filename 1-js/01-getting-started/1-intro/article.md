@@ -1,8 +1,8 @@
-# An Introduction to JavaScript
+# پێشەکییەک لە جاڤاسکڕێپت
 
-Let's see what's so special about JavaScript, what we can achieve with it, and what other technologies play well with it.
+با بزانین چی تایبەتیکی هەیە جاڤاسکڕێپت، دەتوانین چی بەدەست بهێنین لەگەڵیدا، و چ تەکنەلۆژیایەکی دیکە بە باشی کار دەکەن لەگەڵی.
 
-## What is JavaScript?
+## جاڤاسکڕێپت چییە؟
 
 *JavaScript* was initially created to "make web pages alive".
 
