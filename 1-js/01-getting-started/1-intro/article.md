@@ -119,17 +119,18 @@
 
 نموونەی ئەم جۆرە زمانانە:
 
-- [CoffeeScript](https://coffeescript.org/) is "syntactic sugar" for JavaScript. It introduces shorter syntax, allowing us to write clearer and more precise code. Usually, Ruby devs like it.
-- [TypeScript](https://www.typescriptlang.org/) is concentrated on adding "strict data typing" to simplify the development and support of complex systems. It is developed by Microsoft.
-- [Flow](https://flow.org/) also adds data typing, but in a different way. Developed by Facebook.
-- [Dart](https://www.dartlang.org/) is a standalone language that has its own engine that runs in non-browser environments (like mobile apps), but also can be transpiled to JavaScript. Developed by Google.
-- [Brython](https://brython.info/) is a Python transpiler to JavaScript that enables the writing of applications in pure Python without JavaScript.
-- [Kotlin](https://kotlinlang.org/docs/reference/js-overview.html) is a modern, concise and safe programming language that can target the browser or Node.
 
-There are more. Of course, even if we use one of these transpiled languages, we should also know JavaScript to really understand what we're doing.
+- [کافی ئێسکڕێپت](https://coffeescript.org/)  "syntactic sugar"ە بۆ جاڤاسکڕێپت.   سینتێکسێ کورتتر دەناسێنێت و ڕێگەمان پێدەدات کۆدی ڕوونتر و وردتر بنووسین. بەزۆری گەشەپێدەرانی Ruby حەزیان لێیە.
+- [تایپ ئێسکرێپت](https://www.typescriptlang.org/) سەرنجی لەسەر زیادکردنی "تایپکردنی داتایەکی ورد"ە بۆ ئاسانکردنی پەرەپێدان و پشتگیریکردنی سیستەمی ئاڵۆز.لەلایەن کۆمپانیای مایکرۆسۆفتەوە پەرەی پێدراوە.
+- [فلۆ](https://flow.org/) هەروەها Flow تایپی داتا زیاد دەکات، بەڵام بە شێوەیەکی جیاواز. پەرەی پێدراوە لەلایەن فەیسبووک.
+- [دارت](https://www.dartlang.org/) زمانێکی سەربەخۆیە و بزوێنەری تایبەتی خۆی هەیە کە لە ژینگەی نا وێبگەڕدا کاردەکات (وەک ئەپی مۆبایل)، بەڵام دەتوانرێت بگوازرێتەوە بۆ جاڤاسکڕێپت.لەلایەن گووگڵەوە پەرەی پێدراوە.
+- [برایتون](https://brython.info/) پۆرتێرێکی پایتۆن بۆ جاڤاسکڕێپتە کە ڕێگە دەدات بەرنامەکان بە پایتۆنێکی پاک بەبێ جاڤاسکڕێپت بنووسرێن.
+- [کاتلین](https://kotlinlang.org/docs/reference/js-overview.html) زمانێکی بەرنامەسازی مۆدێرن و پوخت و ئەمنە کە دەتوانێت وێبگەڕ یان Node بکاتە ئامانج وە لەگەڵیان کار بکات.
 
-## Summary
 
-- JavaScript was initially created as a browser-only language, but it is now used in many other environments as well.
-- Today, JavaScript has a unique position as the most widely-adopted browser language, fully integrated with HTML/CSS.
-- There are many languages that get "transpiled" to JavaScript and provide certain features. It is recommended to take a look at them, at least briefly, after mastering JavaScript.
+زیاتر لەوێیە. بێگومان تەنانەت ئەگەر یەکێک لەم زمانە وەرگێڕدراوانەش بەکاربهێنین، پێویستە جاڤاسکڕێپت بزانین بۆ ئەوەی بەڕاستی تێبگەین کە چی دەکەین.
+## پوختە
+
+- جاڤاسکڕێپت لە سەرەتادا وەک زمانێکی تەنها وێبگەڕ دروستکرابوو، بەڵام ئێستا لە زۆر ژینگەی دیکەدا بەکاردەهێنرێت.
+- ئەمڕۆ جاڤاسکڕێپت پێگەیەکی ناوازەی هەیە وەک بەکارهێنانی بەربڵاوترین زمانی وێبگەڕ کە بە تەواوی لەگەڵ HTML/CSS یەکگرتووە وە بە ئاسانی دەتوانێ کارەکانمان جێبەجێبکات.
+- زۆر زمان هەن کە "transpiled" دەکرێن بۆ ناو جاڤاسکڕێپت و تایبەتمەندی بەهێزیان هەیە. توصیه می شود پس از تسلط بر جاوا اسکریپت، حداقل به طور خلاصه نگاهی به آنها بیندازید.
