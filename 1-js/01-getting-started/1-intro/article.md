@@ -75,12 +75,17 @@
     وێبگەڕە مۆدێرنەکان ڕێگەی پێدەدەن کار لەگەڵ فایلەکاندا بکات، بەڵام دەستڕاگەیشتن سنووردارە و تەنها لەو کاتەدا دابین دەکرێت کە بەکارهێنەر هەندێک کردار ئەنجام بدات، وەک "خستنەناو" فایلێک بۆ ناو پەنجەرەی وێبگەڕەکە یان هەڵبژاردنی لە ڕێگەی تاگی `<input>` .
 
     ڕێگا هەیە بۆ کارلێککردن لەگەڵ کامێرا/مایکرۆفۆن و ئامێرەکانی تر، بەڵام پێویستیان بە مۆڵەتی بەکارهێنەری ڕوون هەیە. کەواتە لاپەڕەیەک کە جاڤاسکڕێپتی هەبێت ڕەنگە بە نهێنی کامێرای وێب چالاک نەکات و دەوروبەرەکەی نەبینێت و زانیاری بۆ [NSA](https://ckb.wikipedia.org/wiki/%D8%AF%DB%95%D8%B2%DA%AF%D8%A7%DB%8C_%D8%A6%D8%A7%D8%B3%D8%A7%DB%8C%D8%B4%DB%8C_%D9%86%DB%95%D8%AA%DB%95%D9%88%DB%95%DB%8C%DB%8C) نەنێرێت.
-- Different tabs/windows generally do not know about each other. Sometimes they do, for example when one window uses JavaScript to open the other one. But even in this case, JavaScript from one page may not access the other page if they come from different sites (from a different domain, protocol or port).
 
-    This is called the "Same Origin Policy". To work around that, *both pages* must agree for data exchange and must contain special JavaScript code that handles it. We'll cover that in the tutorial.
+  
+- تاب/پەنجەرە جیاوازەکان بەزۆری ئاگاداری یەکتر نین. هەندێک جار ئاگادار یەک ئەوەن، بۆ نموونە کاتێک پەنجەرەیەک جاڤاسکڕێپت بەکاردەهێنێت بۆ کردنەوەی پەنجەرەیەکی تر. بەڵام تەنانەت لەم حاڵەتەشدا، جاڤاسکڕێپت لە لاپەڕەیەکەوە ڕەنگە نەتوانێت دەستی بگات بە لاپەڕەیەکی تر ئەگەر لە سایتی جیاوازەوە بێت (لە دۆمەین، پرۆتۆکۆڵ، یان دەروازەیەکی جیاوازەوە).
 
-    This limitation is, again, for the user's safety. A page from `http://anysite.com` which a user has opened must not be able to access another browser tab with the URL `http://gmail.com`, for example, and steal information from there.
-- JavaScript can easily communicate over the net to the server where the current page came from. But its ability to receive data from other sites/domains is crippled. Though possible, it requires explicit agreement (expressed in HTTP headers) from the remote side. Once again, that's a safety limitation.
+    ئەمەش پێی دەوترێت "Same Origin Policy".بۆ چارەسەرکردنی، *هەردوو لاپەڕەکە* دەبێت ڕازی بن لەسەر ئاڵوگۆڕی داتا، و دەبێت کۆدی تایبەتی جاڤاسکڕێپتیان تێدابێت کە مامەڵە لەگەڵ پەنجەرەکان یا تەبەکان بکات. لە فێرکاریدا باسی ئەم بابەتە دەکەین.
+  
+
+    این محدودیت مجدداً برای ایمنی کاربر است. لاپەڕەیەک لە `http://anysite.com` کە بەکارهێنەر کردوویەتیەوە نابێت بۆ نموونە بچێتە ناو تابێکی تری وێبگەڕ بە ئادرسی  `http://gmail.com` و لەوێوە زانیاری بدزێت.
+
+ 
+- جاڤاسکڕێپت دەتوانێت بە ئاسانی لە ڕێگەی تۆڕەوە پەیوەندی لەگەڵ ئەو سێرڤەرە بکات کە لاپەڕەی ئێستا لێیەوە هاتووە.بەڵام توانای وەرگرتنی زانیاری لە سایت/دۆمەینەکانی ترەوە پەککەوتووە.هەرچەندە دەکرێت، بەڵام پێویستی بە ڕێککەوتنی ڕوون هەیە (بە سەردێڕی HTTP ) لە لایەنی دوورەوە. جارێکی تریش ئەمە سنووردارکردنی ئەمنە بۆ بەکارهێنەرەکان.
 
 ![](limitations.svg)
 
