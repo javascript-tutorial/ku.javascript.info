@@ -1,122 +1,136 @@
-# An Introduction to JavaScript
+# پێشەکییەک لە جاڤاسکڕێپت
 
-Let's see what's so special about JavaScript, what we can achieve with it, and what other technologies play well with it.
+با بزانین چی تایبەتیکی هەیە جاڤاسکڕێپت، دەتوانین چی بەدەست بهێنین لەگەڵیدا، و چ تەکنەلۆژیایەکی دیکە بە باشی کار دەکەن لەگەڵی.
 
-## What is JavaScript?
+## جاڤاسکڕێپت چییە؟
 
-*JavaScript* was initially created to "make web pages alive".
+*جاڤاسکڕێپت* لە سەرەتادا بۆ "بە زیندوویکردنی لاپەڕەکانی وێب" دروستکرا.
 
-The programs in this language are called *scripts*. They can be written right in a web page's HTML and run automatically as the page loads.
+بەرنامەکانی ئەم زمانە پێیان دەوترێت *scripts*. دەتوانرێت لە HTML ی پەڕەیکی وێب بنووسرێن و بە بارکردنی لاپەڕەکە بە شێوەیەکی ئۆتۆماتیکی کاربکەن.
+سکریپتەکان وەک دەقی سادە دابین دەکرێن و جێبەجێ دەکرێن.
 
-Scripts are provided and executed as plain text. They don't need special preparation or compilation to run.
+پێویستیان بە ئامادەکاری تایبەت یان کۆکردنەوە نییە بۆ ئەوەی کاربکەن.
 
-In this aspect, JavaScript is very different from another language called [Java](https://en.wikipedia.org/wiki/Java_(programming_language)).
+لەم لایەنەدا جاڤاسکڕێپت زۆر جیاوازە لە زمانێکی تر بە ناوی [جاڤا](https://ckb.wikipedia.org/wiki/%D8%AC%D8%A7%DA%A4%D8%A7_(%D8%B2%D9%85%D8%A7%D9%86%DB%8C_%D8%A8%DB%95%D8%B1%D9%86%D8%A7%D9%85%DB%95%D8%B3%D8%A7%D8%B2%DB%8C))
 
-```smart header="Why is it called <u>Java</u>Script?"
-When JavaScript was created, it initially had another name: "LiveScript". But Java was very popular at that time, so it was decided that positioning a new language as a "younger brother" of Java would help.
 
-But as it evolved, JavaScript became a fully independent language with its own specification called [ECMAScript](http://en.wikipedia.org/wiki/ECMAScript), and now it has no relation to Java at all.
+```smart header="بۆچی پێی دەوترێت <u>جاڤا؟</u>script>"
+کاتێک جاڤاسکڕێپت دروستکرا، سەرەتا ناوێکی دیکەی هەبوو: "Livescript".بەڵام جاڤا لەو کاتەدا زۆر بەناوبانگ بوو، بۆیە بڕیاردرا کە جێگیرکردنی زمانێکی نوێ وەک "برایەکی بچووکتر"ی جاڤا یارمەتیدەر بێت.
+
+بەڵام لەگەڵ پەرەسەندندا، جاڤاسکڕێپت بوو بە زمانێکی تەواو سەربەخۆ کە تایبەتمەندی خۆی هەبوو و بوو بە [ئێکماسکڕێپت](https://en.wikipedia.org/wiki/ECMAScript)،وە ئێستا بە هیچ شێوەیەک پەیوەندی بە جاڤاوە نییە.
 ```
 
-Today, JavaScript can execute not only in the browser, but also on the server, or actually on any device that has a special program called [the JavaScript engine](https://en.wikipedia.org/wiki/JavaScript_engine).
+ئەمڕۆ، جاڤاسکڕێپت دەتوانێت نەک تەنها لە وێبگەڕەکەدا کار بکات، بەڵکو لەسەر سێرڤەر، یان لە ڕاستیدا لەسەر هەر ئامێرێک کە بەرنامەیەکی تایبەتی هەبێت بە ناوی [JavaScript engine](https://en.wikipedia.org/wiki/JavaScript_engine).
 
-The browser has an embedded engine sometimes called a "JavaScript virtual machine".
+وێبگەڕەکە بزوێنەرێکی جێگیرکراوی هەیە، هەندێک جار پێی دەوترێت "ئامێری مەجازی جاڤاسکڕێپت".
 
-Different engines have different "codenames". For example:
+بزوێنەرە جیاوازەکان "کۆدناوی(codenames)" جیاوازیان هەیە. بۆ نموونە:
 
-- [V8](https://en.wikipedia.org/wiki/V8_(JavaScript_engine)) -- in Chrome, Opera and Edge.
-- [SpiderMonkey](https://en.wikipedia.org/wiki/SpiderMonkey) -- in Firefox.
-- ...There are other codenames like "Chakra" for IE, "JavaScriptCore", "Nitro" and "SquirrelFish" for Safari, etc.
 
-The terms above are good to remember because they are used in developer articles on the internet. We'll use them too. For instance, if "a feature X is supported by V8", then it probably works in Chrome, Opera and Edge.
+- [ڤی ٨](https://en.wikipedia.org/wiki/V8_(JavaScript_engine)) -- لە کرۆم و ئۆپێرا و ئێدج.
+- [ئێسپایدرمانکی](https://en.wikipedia.org/wiki/SpiderMonkey) -- لە فایرفاکس.
+-   کۆدناوی دیکەش هەن وەک "چاکرا" بۆ IE ،  "جاڤاسکڕێپت کۆر"، "نیترۆ" و "SquirreLish" بۆ سەفاری و هتد.
 
-```smart header="How do engines work?"
+-   باشە ئەو کۆدناوەکانی سەرەوە لەبیرمان بمێنێ چونکە لە بابەتەکانی گەشەپێدەران لە ئینتەرنێتدا بەکاردێت.ئێمەش بەکاریان دەهێنین. بۆ نموونە,ئەگەر "تایبەتمەندییەک X لەلایەن V8 پشتگیری بکرێت" ، پاشان ئەگەری زۆرە لە کرۆم و ئۆپێرا و ئێدجدا کار بکات
 
-Engines are complicated. But the basics are easy.
 
-1. The engine (embedded if it's a browser) reads ("parses") the script.
-2. Then it converts ("compiles") the script to machine code.
-3. And then the machine code runs, pretty fast.
+```smart header="بزوێنەرەکان چۆن کاردەکەن؟"
 
-The engine applies optimizations at each step of the process. It even watches the compiled script as it runs, analyzes the data that flows through it, and further optimizes the machine code based on that knowledge.
+بزوێنەرەکان ئاڵۆزن. بەڵام بنەماکان ئاسانن.
+
+1. بزوێنەرەکە (ئەگەر وێبگەڕێک بێت بزوێنەرەکە لە نێوخۆی جێگیربووە) سکریپتەکە دەخوێنێتەوە ("وە شیکاری دەکات").
+2. پاشان سکریپتەکە دەگۆڕێت بۆ کۆدی ماشین ("کامپایڵکردن").
+3. و پاشان کۆدی ماشین زۆر بە خێرایی کاردەکات.
+
+بزوێنەرەکە لە هەر هەنگاوێکدا هەوڵ ئەدات پرۆسەکە باشتر و خێراتر بکات. تەنانەت کاتێ کە ئێسکرێپتەکە کامپایڵ بووە بزوێنەرەکە کارکردنی ئێسکڕێپتەکە ئەگرێتە ژێرچاودێری ، ئەو زانیاریانە کە لە ڕێگای ئێسکڕێپت ئێمە تێن وە ئەچنیش شی دەکاتەوە ، وە بەپێی ئەم زانیاریەنە کە لە ڕێگای چاودێریکردن وە شی کردنەوەی دیتاکانی هات و چوو کراوەی ئێسکرێپتەکە کۆیکردەسەو کۆدی ماشینەکە باشتر و گونجاوتر دەکات بەپشتبەستن بەو زانیاریەکانی خۆی
 ```
 
-## What can in-browser JavaScript do?
+## جاڤاسکڕێپت لە ناو وێبگەڕە چی دەتوانێ بکات؟
 
-Modern JavaScript is a "safe" programming language. It does not provide low-level access to memory or the CPU, because it was initially created for browsers which do not require it.
+جاڤاسکڕێپتی مۆدێرن زمانێکی بەرنامەسازی "ئەمنە". دەستگەیشتن بە ئاستی نزم بۆ بیرگە یان CPU نادات چونکە لە سەرەتادا بۆ ئەو وێبگەڕانە دروستکراوە کە پێویستیان پێی نییە.
 
-JavaScript's capabilities greatly depend on the environment it's running in. For instance, [Node.js](https://wikipedia.org/wiki/Node.js) supports functions that allow JavaScript to read/write arbitrary files, perform network requests, etc.
+تواناکانی جاڤاسکڕێپت تا ڕادەیەکی زۆر پشت بەو ژینگەیە دەبەستێت کە تێیدا کاردەکات.[Node.js](https://ckb.wikipedia.org/wiki/%D9%86%DB%86%D8%AF_%D8%AC%DB%95%DB%8C_%D8%A6%DB%8E%D8%B3) پشتگیری لەو فانکشنەنە دەکات کە ڕێگە بە جاڤاسکڕێپت دەدەن فایلە دڵخوازەکان بخوێنێتەوە/بینووسێت، داواکاری تۆڕەکان دروست بکات و هتد.
 
-In-browser JavaScript can do everything related to webpage manipulation, interaction with the user, and the webserver.
+جاڤاسکڕێپت لە وێبگەڕەکەدا دەتوانێت هەموو ئەرکەکانی دەستکاریکردنی لاپەڕەکانی وێب، وەڵام دانەوەی داواکاریەکانی بەکارهێنەر و سێرڤەری وێب ئەنجام بدات.
 
-For instance, in-browser JavaScript is able to:
 
-- Add new HTML to the page, change the existing content, modify styles.
-- React to user actions, run on mouse clicks, pointer movements, key presses.
-- Send requests over the network to remote servers, download and upload files (so-called [AJAX](https://en.wikipedia.org/wiki/Ajax_(programming)) and [COMET](https://en.wikipedia.org/wiki/Comet_(programming)) technologies).
-- Get and set cookies, ask questions to the visitor, show messages.
-- Remember the data on the client-side ("local storage").
 
-## What CAN'T in-browser JavaScript do?
+بۆ نموونە جاڤاسکڕێپت لەناو وێبگەڕەکەدا توانای هەیە:
 
-JavaScript's abilities in the browser are limited to protect the user's safety. The aim is to prevent an evil webpage from accessing private information or harming the user's data.
+- ئێچ تی ئێم ئێڵ یان HTML ی نوێ زیاد بکە بۆ لاپەڕەکە، ناوەڕۆکەکان وە ستایلەکان بگۆڕێت.
+- کاردانەوە بەرامبەر بە کردارەکانی بەکارهێنەر بێت، کرتە لە ماوس کردن، جوڵانەوەی ماوس، فشار دان دوکمەکانی کیبۆرد، بۆ هەموو ئەمانە دەتوانن کاردانەوەیکی تایبەت ئامادە وە جێبەجێکەن
+- ناردنی داواکاری لە ڕێگەی تۆڕەوە بۆ سێرڤەرە دوورەکان، دانلود و ئاپلۆد فایلەکان (کە پێی دەوترێت [AJAX](https://en.wikipedia.org/wiki/Ajax_(programming)). و تەکنەلۆژیای [COMET](https://en.wikipedia.org/wiki/Comet_(programming))
 
-Examples of such restrictions include:
+- کووکی وەرگرتن و ڕێکخستن، پرسیار لە سەردانکەرەکانی ماڵپەڕەکە بکە، نامەکان پیشان بدە.
+- داتاکانی لایەنی کلاینت ("Local Storage") پاشەکەوت بکە.
 
-- JavaScript on a webpage may not read/write arbitrary files on the hard disk, copy them or execute programs. It has no direct access to OS functions.
+## جاڤاسکڕێپت لە وێبگەڕەکانە ناتوانێت چی بکات؟
 
-    Modern browsers allow it to work with files, but the access is limited and only provided if the user does certain actions, like "dropping" a file into a browser window or selecting it via an `<input>` tag.
+تواناکانی جاڤاسکڕێپت لە وێبگەڕەکاندا سنووردارە بۆ پاراستنی سەلامەتی بەکارهێنەر. ئامانج لێی ڕێگریکردنە لە دەستگەیشتن بە زانیارییە تایبەتەکان یان زیانگەیاندن بە زانیارییەکانی بەکارهێنەر.
 
-    There are ways to interact with the camera/microphone and other devices, but they require a user's explicit permission. So a JavaScript-enabled page may not sneakily enable a web-camera, observe the surroundings and send the information to the [NSA](https://en.wikipedia.org/wiki/National_Security_Agency).
-- Different tabs/windows generally do not know about each other. Sometimes they do, for example when one window uses JavaScript to open the other one. But even in this case, JavaScript from one page may not access the other page if they come from different sites (from a different domain, protocol or port).
+نموونەی ئەم سنووردارکردنانە بریتین لە:
 
-    This is called the "Same Origin Policy". To work around that, *both pages* must agree for data exchange and must contain special JavaScript code that handles it. We'll cover that in the tutorial.
+- جاڤاسکڕێپت لە وێب پەڕێکدا لەوانەیە فایلە ئارەزوومەندانە لەسەر هارد دیسکەکە بخوێنێتەوە/بنووسێت، کۆپییان بکات، یان بەرنامەکان ئێجرابکات. دەستڕاگەیشتنێکی ڕاستەوخۆی بە کارەکانی سیستەمی کارپێکردن نییە.
 
-    This limitation is, again, for the user's safety. A page from `http://anysite.com` which a user has opened must not be able to access another browser tab with the URL `http://gmail.com`, for example, and steal information from there.
-- JavaScript can easily communicate over the net to the server where the current page came from. But its ability to receive data from other sites/domains is crippled. Though possible, it requires explicit agreement (expressed in HTTP headers) from the remote side. Once again, that's a safety limitation.
+    وێبگەڕە مۆدێرنەکان ڕێگەی پێدەدەن کار لەگەڵ فایلەکاندا بکات، بەڵام دەستڕاگەیشتن سنووردارە و تەنها لەو کاتەدا دابین دەکرێت کە بەکارهێنەر هەندێک کردار ئەنجام بدات، وەک "خستنەناو" فایلێک بۆ ناو پەنجەرەی وێبگەڕەکە یان هەڵبژاردنی لە ڕێگەی تاگی `<input>` .
+
+    ڕێگا هەیە بۆ کارلێککردن لەگەڵ کامێرا/مایکرۆفۆن و ئامێرەکانی تر، بەڵام پێویستیان بە مۆڵەتی بەکارهێنەری ڕوون هەیە. کەواتە لاپەڕەیەک کە جاڤاسکڕێپتی هەبێت ڕەنگە بە نهێنی کامێرای وێب چالاک نەکات و دەوروبەرەکەی نەبینێت و زانیاری بۆ [NSA](https://ckb.wikipedia.org/wiki/%D8%AF%DB%95%D8%B2%DA%AF%D8%A7%DB%8C_%D8%A6%D8%A7%D8%B3%D8%A7%DB%8C%D8%B4%DB%8C_%D9%86%DB%95%D8%AA%DB%95%D9%88%DB%95%DB%8C%DB%8C) نەنێرێت.
+
+  
+- تاب/پەنجەرە جیاوازەکان بەزۆری ئاگاداری یەکتر نین. هەندێک جار ئاگادار یەک ئەوەن، بۆ نموونە کاتێک پەنجەرەیەک جاڤاسکڕێپت بەکاردەهێنێت بۆ کردنەوەی پەنجەرەیەکی تر. بەڵام تەنانەت لەم حاڵەتەشدا، جاڤاسکڕێپت لە لاپەڕەیەکەوە ڕەنگە نەتوانێت دەستی بگات بە لاپەڕەیەکی تر ئەگەر لە سایتی جیاوازەوە بێت (لە دۆمەین، پرۆتۆکۆڵ، یان دەروازەیەکی جیاوازەوە).
+
+    ئەمەش پێی دەوترێت "Same Origin Policy".بۆ چارەسەرکردنی، *هەردوو لاپەڕەکە* دەبێت ڕازی بن لەسەر ئاڵوگۆڕی داتا، و دەبێت کۆدی تایبەتی جاڤاسکڕێپتیان تێدابێت کە مامەڵە لەگەڵ پەنجەرەکان یا تەبەکان بکات. لە فێرکاریدا باسی ئەم بابەتە دەکەین.
+  
+
+    این محدودیت مجدداً برای ایمنی کاربر است. لاپەڕەیەک لە `http://anysite.com` کە بەکارهێنەر کردوویەتیەوە نابێت بۆ نموونە بچێتە ناو تابێکی تری وێبگەڕ بە ئادرسی  `http://gmail.com` و لەوێوە زانیاری بدزێت.
+
+ 
+- جاڤاسکڕێپت دەتوانێت بە ئاسانی لە ڕێگەی تۆڕەوە پەیوەندی لەگەڵ ئەو سێرڤەرە بکات کە لاپەڕەی ئێستا لێیەوە هاتووە.بەڵام توانای وەرگرتنی زانیاری لە سایت/دۆمەینەکانی ترەوە پەککەوتووە.هەرچەندە دەکرێت، بەڵام پێویستی بە ڕێککەوتنی ڕوون هەیە (بە سەردێڕی HTTP ) لە لایەنی دوورەوە. جارێکی تریش ئەمە سنووردارکردنی ئەمنە بۆ بەکارهێنەرەکان.
 
 ![](limitations.svg)
 
-Such limitations do not exist if JavaScript is used outside of the browser, for example on a server. Modern browsers also allow plugins/extensions which may ask for extended permissions.
 
-## What makes JavaScript unique?
+ئەگەر جاڤاسکڕێپت لە دەرەوەی وێبگەڕ بەکاربهێنرێت، بۆ نموونە لەسەر سێرڤەر، هیچ سنووردارکردنێکی لەو جۆرە نییە.هەروەها وێبگەڕە مۆدێرنەکان ڕێگە بە plugins/extensions دەدەن کە ڕەنگە داوای مۆڵەتی درێژتر وە سەختر بکەن.
 
-There are at least *three* great things about JavaScript:
+## چی جاڤاسکڕێپت تایبەت دەکات؟
+
+بەلایەنی کەمەوە *سێ* شتی نایاب لە جاڤاسکڕێپتدا هەیە:
 
 ```compare
-+ Full integration with HTML/CSS.
-+ Simple things are done simply.
-+ Supported by all major browsers and enabled by default.
++ یەکخستنی تەواو لەگەڵ HTML/CSS.
++ ئەرکە سادەکان بە ئاسانی ئەنجام دەدرێن.
++ لەلایەن هەموو وێبگەڕە سەرەکییەکانەوە پشتگیری دەکرێت و بە شێوازی پێشوەختە چالاک کراوە.
 ```
-JavaScript is the only browser technology that combines these three things.
+جاڤاسکڕێپت تاکە تەکنەلۆژیای وێبگەڕە کە هەر سێ لە ئەو تایبەتمەندیەنە کۆدەکاتەوە و پشتگیری لێدەکات.
 
-That's what makes JavaScript unique. That's why it's the most widespread tool for creating browser interfaces.
+ئەمەش وایکردووە جاڤاسکڕێپت تایبەت بێت. هەر بۆیە بەرفراوانترین ئامرازە بۆ دروستکردنی ڕووکاری وێبگەڕ.
 
-That said, JavaScript can be used to create servers, mobile applications, etc.
+کە ووتمان دەتوانرێت جاڤاسکڕێپت بەکاربهێنرێت بۆ دروستکردنی سێرڤەر و بەرنامەی مۆبایل و زۆر شتی تر.
 
-## Languages "over" JavaScript
+## زمانەکان "لە دەرەوەی" جاڤاسکڕێپت
+سینتێکس جاڤاسکڕێپت لەگەڵ پێداویستی هەموو کەسێکدا ناگونجێت.کەسانی جیاواز تایبەتمەندی جیاوازیان دەوێت.
 
-The syntax of JavaScript does not suit everyone's needs. Different people want different features.
 
-That's to be expected, because projects and requirements are different for everyone.
+ئەمەش جێگەی چاوەڕوانییە، بەو پێیەی پڕۆژە و پێداویستییەکانی هەمووان جیاوازن.
 
-So, recently a plethora of new languages appeared, which are *transpiled* (converted) to JavaScript before they run in the browser.
+بۆیە لەم دواییانەدا زۆر زمانی نوێ دەرکەوتوون کە پێش ئەوەی لە وێبگەڕەکەدا کاربکەن *transpiled* (دەگۆڕن) بۆ جاڤاسکڕێپت.
 
-Modern tools make the transpilation very fast and transparent, actually allowing developers to code in another language and auto-converting it "under the hood".
+ئامرازە مۆدێرنەکان وەرگێڕان زۆر خێرا و شەفاف دەکەن، لە ڕاستیدا ڕێگە بە گەشەپێدەران دەدەن بە زمانێکی تر کۆد بکەن و بە شێوەیەکی ئۆتۆماتیکی بیگۆڕن "under the hood".
 
-Examples of such languages:
+نموونەی ئەم جۆرە زمانانە:
 
-- [CoffeeScript](https://coffeescript.org/) is "syntactic sugar" for JavaScript. It introduces shorter syntax, allowing us to write clearer and more precise code. Usually, Ruby devs like it.
-- [TypeScript](https://www.typescriptlang.org/) is concentrated on adding "strict data typing" to simplify the development and support of complex systems. It is developed by Microsoft.
-- [Flow](https://flow.org/) also adds data typing, but in a different way. Developed by Facebook.
-- [Dart](https://www.dartlang.org/) is a standalone language that has its own engine that runs in non-browser environments (like mobile apps), but also can be transpiled to JavaScript. Developed by Google.
-- [Brython](https://brython.info/) is a Python transpiler to JavaScript that enables the writing of applications in pure Python without JavaScript.
-- [Kotlin](https://kotlinlang.org/docs/reference/js-overview.html) is a modern, concise and safe programming language that can target the browser or Node.
 
-There are more. Of course, even if we use one of these transpiled languages, we should also know JavaScript to really understand what we're doing.
+- [کافی ئێسکڕێپت](https://coffeescript.org/)  "syntactic sugar"ە بۆ جاڤاسکڕێپت.   سینتێکسێ کورتتر دەناسێنێت و ڕێگەمان پێدەدات کۆدی ڕوونتر و وردتر بنووسین. بەزۆری گەشەپێدەرانی Ruby حەزیان لێیە.
+- [تایپ ئێسکرێپت](https://www.typescriptlang.org/) سەرنجی لەسەر زیادکردنی "تایپکردنی داتایەکی ورد"ە بۆ ئاسانکردنی پەرەپێدان و پشتگیریکردنی سیستەمی ئاڵۆز.لەلایەن کۆمپانیای مایکرۆسۆفتەوە پەرەی پێدراوە.
+- [فلۆ](https://flow.org/) هەروەها Flow تایپی داتا زیاد دەکات، بەڵام بە شێوەیەکی جیاواز. پەرەی پێدراوە لەلایەن فەیسبووک.
+- [دارت](https://www.dartlang.org/) زمانێکی سەربەخۆیە و بزوێنەری تایبەتی خۆی هەیە کە لە ژینگەی نا وێبگەڕدا کاردەکات (وەک ئەپی مۆبایل)، بەڵام دەتوانرێت بگوازرێتەوە بۆ جاڤاسکڕێپت.لەلایەن گووگڵەوە پەرەی پێدراوە.
+- [برایتون](https://brython.info/) پۆرتێرێکی پایتۆن بۆ جاڤاسکڕێپتە کە ڕێگە دەدات بەرنامەکان بە پایتۆنێکی پاک بەبێ جاڤاسکڕێپت بنووسرێن.
+- [کاتلین](https://kotlinlang.org/docs/reference/js-overview.html) زمانێکی بەرنامەسازی مۆدێرن و پوخت و ئەمنە کە دەتوانێت وێبگەڕ یان Node بکاتە ئامانج وە لەگەڵیان کار بکات.
 
-## Summary
 
-- JavaScript was initially created as a browser-only language, but it is now used in many other environments as well.
-- Today, JavaScript has a unique position as the most widely-adopted browser language, fully integrated with HTML/CSS.
-- There are many languages that get "transpiled" to JavaScript and provide certain features. It is recommended to take a look at them, at least briefly, after mastering JavaScript.
+زیاتر لەوێیە. بێگومان تەنانەت ئەگەر یەکێک لەم زمانە وەرگێڕدراوانەش بەکاربهێنین، پێویستە جاڤاسکڕێپت بزانین بۆ ئەوەی بەڕاستی تێبگەین کە چی دەکەین.
+## پوختە
+
+- جاڤاسکڕێپت لە سەرەتادا وەک زمانێکی تەنها وێبگەڕ دروستکرابوو، بەڵام ئێستا لە زۆر ژینگەی دیکەدا بەکاردەهێنرێت.
+- ئەمڕۆ جاڤاسکڕێپت پێگەیەکی ناوازەی هەیە وەک بەکارهێنانی بەربڵاوترین زمانی وێبگەڕ کە بە تەواوی لەگەڵ HTML/CSS یەکگرتووە وە بە ئاسانی دەتوانێ کارەکانمان جێبەجێبکات.
+- زۆر زمان هەن کە "transpiled" دەکرێن بۆ ناو جاڤاسکڕێپت و تایبەتمەندی بەهێزیان هەیە. توصیه می شود پس از تسلط بر جاوا اسکریپت، حداقل به طور خلاصه نگاهی به آنها بیندازید.
