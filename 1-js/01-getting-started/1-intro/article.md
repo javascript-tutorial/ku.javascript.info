@@ -89,7 +89,8 @@
 
 ![](limitations.svg)
 
-Such limitations do not exist if JavaScript is used outside of the browser, for example on a server. Modern browsers also allow plugins/extensions which may ask for extended permissions.
+
+ئەگەر جاڤاسکڕێپت لە دەرەوەی وێبگەڕ بەکاربهێنرێت، بۆ نموونە لەسەر سێرڤەر، هیچ سنووردارکردنێکی لەو جۆرە نییە.هەروەها وێبگەڕە مۆدێرنەکان ڕێگە بە plugins/extensions دەدەن کە ڕەنگە داوای مۆڵەتی درێژتر وە سەختر بکەن.
 
 ## What makes JavaScript unique?
 
