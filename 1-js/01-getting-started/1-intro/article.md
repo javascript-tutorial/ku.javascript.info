@@ -92,32 +92,32 @@
 
 ئەگەر جاڤاسکڕێپت لە دەرەوەی وێبگەڕ بەکاربهێنرێت، بۆ نموونە لەسەر سێرڤەر، هیچ سنووردارکردنێکی لەو جۆرە نییە.هەروەها وێبگەڕە مۆدێرنەکان ڕێگە بە plugins/extensions دەدەن کە ڕەنگە داوای مۆڵەتی درێژتر وە سەختر بکەن.
 
-## What makes JavaScript unique?
+## چی جاڤاسکڕێپت تایبەت دەکات؟
 
-There are at least *three* great things about JavaScript:
+بەلایەنی کەمەوە *سێ* شتی نایاب لە جاڤاسکڕێپتدا هەیە:
 
 ```compare
-+ Full integration with HTML/CSS.
-+ Simple things are done simply.
-+ Supported by all major browsers and enabled by default.
++ یەکخستنی تەواو لەگەڵ HTML/CSS.
++ ئەرکە سادەکان بە ئاسانی ئەنجام دەدرێن.
++ لەلایەن هەموو وێبگەڕە سەرەکییەکانەوە پشتگیری دەکرێت و بە شێوازی پێشوەختە چالاک کراوە.
 ```
-JavaScript is the only browser technology that combines these three things.
+جاڤاسکڕێپت تاکە تەکنەلۆژیای وێبگەڕە کە هەر سێ لە ئەو تایبەتمەندیەنە کۆدەکاتەوە و پشتگیری لێدەکات.
 
-That's what makes JavaScript unique. That's why it's the most widespread tool for creating browser interfaces.
+ئەمەش وایکردووە جاڤاسکڕێپت تایبەت بێت. هەر بۆیە بەرفراوانترین ئامرازە بۆ دروستکردنی ڕووکاری وێبگەڕ.
 
-That said, JavaScript can be used to create servers, mobile applications, etc.
+کە ووتمان دەتوانرێت جاڤاسکڕێپت بەکاربهێنرێت بۆ دروستکردنی سێرڤەر و بەرنامەی مۆبایل و زۆر شتی تر.
 
-## Languages "over" JavaScript
+## زمانەکان "لە دەرەوەی" جاڤاسکڕێپت
+سینتێکس جاڤاسکڕێپت لەگەڵ پێداویستی هەموو کەسێکدا ناگونجێت.کەسانی جیاواز تایبەتمەندی جیاوازیان دەوێت.
 
-The syntax of JavaScript does not suit everyone's needs. Different people want different features.
 
-That's to be expected, because projects and requirements are different for everyone.
+ئەمەش جێگەی چاوەڕوانییە، بەو پێیەی پڕۆژە و پێداویستییەکانی هەمووان جیاوازن.
 
-So, recently a plethora of new languages appeared, which are *transpiled* (converted) to JavaScript before they run in the browser.
+بۆیە لەم دواییانەدا زۆر زمانی نوێ دەرکەوتوون کە پێش ئەوەی لە وێبگەڕەکەدا کاربکەن *transpiled* (دەگۆڕن) بۆ جاڤاسکڕێپت.
 
-Modern tools make the transpilation very fast and transparent, actually allowing developers to code in another language and auto-converting it "under the hood".
+ئامرازە مۆدێرنەکان وەرگێڕان زۆر خێرا و شەفاف دەکەن، لە ڕاستیدا ڕێگە بە گەشەپێدەران دەدەن بە زمانێکی تر کۆد بکەن و بە شێوەیەکی ئۆتۆماتیکی بیگۆڕن "under the hood".
 
-Examples of such languages:
+نموونەی ئەم جۆرە زمانانە:
 
 - [CoffeeScript](https://coffeescript.org/) is "syntactic sugar" for JavaScript. It introduces shorter syntax, allowing us to write clearer and more precise code. Usually, Ruby devs like it.
 - [TypeScript](https://www.typescriptlang.org/) is concentrated on adding "strict data typing" to simplify the development and support of complex systems. It is developed by Microsoft.
