@@ -1,37 +1,43 @@
 
-# Manuals and specifications
+# ڕێنوێنی و زانیاریەکان.
 
-This book is a *tutorial*. It aims to help you gradually learn the language. But once you're familiar with the basics, you'll need other resources.
+ئەم کتێبە *فێرکارییەکە*.مەبەست لە ئەم فێرکارییە یارمەتیدانی ئێوەیە بۆ فێربوونی وردە وردە زمانی جاڤاسکڕێپت. بەڵام کاتێک بنەماکانی زمانی جاڤاسکڕێپت فێر بوویت  پێویستە بچیت وە سەرچاوەنێ تری فێرکاری تماشا کەیت وە ڕێگای بوون بە پرۆگرامسازێ پرۆفشناڵ لە ڕێگای سەرچاوەنێ ترەو درێژە بەیت.
 
-## Specification
 
-[The ECMA-262 specification](https://www.ecma-international.org/publications/standards/Ecma-262.htm) contains the most in-depth, detailed and formalized information about JavaScript. It defines the language.
+## زانیاریەکان
 
-But being that formalized, it's difficult to understand at first. So if you need the most trustworthy source of information about the language details, the specification is the right place. But it's not for everyday use.
 
-A new specification version is released every year. Between these releases, the latest specification draft is at <https://tc39.es/ecma262/>.
+[ئێکماسکڕێپت](https://www.ecma-international.org/publications/standards/Ecma-262.htm) قووڵترین و وردترین و دەسەڵاتدارترین زانیاری فێرکاری لەبارەی جاڤاسکڕێپت لەخۆدەگرێت. وا بڵێین باشترە کە بە شێوازی تەواو زمانی جاڤاسکڕێپت پێناسە دەکات.
 
-To read about new bleeding-edge features, including those that are "almost standard" (so-called "stage 3"), see proposals at <https://github.com/tc39/proposals>.
+بەڵام بەو پێیەی  فەرمی کراوە وە بە زمانێکی تەواو ئاکادمیک نووسراوە، سەرەتا تێگەیشتن لێی زۆر ئەستەمە.
 
-Also, if you're developing for the browser, then there are other specifications covered in the [second part](info:browser-environment) of the tutorial.
+کەواتە ئەگەر پێویستت بە دەسەڵاتدارترین سەرچاوەی زانیارییە سەبارەت بە وردەکارییەکانی زمانی جاڤاسکڕێپت، ماڵپەڕی ئێکماسکرێپت ئەو باشترین شوێنە کە دەبێ ئێوە لەناوی بگەڕن وە فێربەن. بەڵام بۆ بەکارهێنانی ڕۆژانە بە هیچ شێوەیک گونجاو وە سوودمەند نییە.
 
-## Manuals
+ساڵانە وەشانێک بە زانیاری وە فێرکاریی نوێیەوە بڵاودەکرێتەوە. لە نێو ئەم وەشانەدا، نوێترین ڕەشنووسی تایبەتمەندییەکان و زانیاریەکان سەربارەت بە زمانەکە بەردەستە.<https://tc39.es/ecma262/>
 
-- **MDN (Mozilla) JavaScript Reference** is the main manual with examples and other information. It's great to get in-depth information about individual language functions, methods etc.
+بۆ خوێندنەوە دەربارەی تایبەتمەندییە نوێیەکانی   bleeding-edge  ئەوانەی کە "نزیکەی ستانداردن" (پێیان دەوترێت "قۆناغی ٣")، سەیری پێشنیارەکان بکە لە ئەم لینکە.<https://github.com/tc39/proposals>.
 
-    You can find it at <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference>.
+هەروەها ئەگەر جاڤاسکڕێپت بۆ گەشەپێدان لە ناو وێبگەر وە درووسکردن ماڵپەڕ بەکار ئەوەیت، ئەوا زانیاری دیکە لە [بەشی دووەم](info:browser-environment)ی فێرکارییەکەدا بەردەستە.
 
-Although, it's often best to use an internet search instead. Just use "MDN [term]" in the query, e.g. <https://google.com/search?q=MDN+parseInt> to search for the `parseInt` function.
+## کتێبی ڕێنماییەکان دیجیتاڵ
 
-## Compatibility tables
+- **سەرچاوەی جاڤاسکڕێپتی MDN (Mozilla)** ڕێنمایی سەرەکییە لەگەڵ نموونە و زانیاری باشترین فێرکاریتان پێ پێشکەش دەکات.زۆر باشە بۆ ئەوە کە زانیاریی قووڵ تر وە وردتر بە دەست بێریت  وە بە باشی لەسەر  ئەرکەکانی زمانەکە و فانکشنەکان وە مێتۆدەکان قسەی کردووە و هتد.
+        دەتوانیت لە <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference> بیدۆزیتەوە.
+    
 
-JavaScript is a developing language, new features get added regularly.
+بەڵام زۆرجار باشترە لەبری ئەوە گەڕانی بێ سوود وە بێ ئامانج لە ناو ماڵپەڕەکانی جیاوازی فێرکاری  بەکاربهێنرێت. تەنها لە پرسیارەکەدا "MDN [term]" بەکاربهێنە، بۆ نموونە. <https://google.com/search?q=MDN+parseInt> بۆ گەڕان بەدوای فانکشەنی "parseInt".
 
-To see their support among browser-based and other engines, see:
+## خشتەی گونجان
 
-- <https://caniuse.com> - per-feature tables of support, e.g. to see which engines support modern cryptography functions: <https://caniuse.com/#feat=cryptography>.
-- <https://kangax.github.io/compat-table> - a table with language features and engines that support those or don't support.
+جاڤاسکڕێپت زمانێکی گەشەسەندووە، بە بەردەوامی تایبەتمەندی نوێ پێ زیاد دەکرێت.
 
-All these resources are useful in real-life development, as they contain valuable information about language details, their support, etc.
+بۆ بینینی پشتگیرییەکانیان لە نێوان بزوێنەرە بنچینەییەکانی وێبگەڕ و بزوێنەرەکانی تردا، سەیری ئەمانە بکەن:
 
-Please remember them (or this page) for the cases when you need in-depth information about a particular feature.
+- <https://caniuse.com> - خشتەی پشتگیری  بۆ هەر تایبەتمەندییەک پیشان دەدات، بۆ نموونە. بۆ ئەوەی بزانیت کام بزوێنەر پشتگیری لە فانکشێن کریپتۆگرافی مۆدێرن دەکات: <https://caniuse.com/#feat=cryptography>.
+
+- <https://kangax.github.io/compat-table> - خشتەیەکە کە تایبەتمەندی زمان و ئەو بزوێنەرانەی تێدایە کە پشتگیریان دەکەن یان نایکەن پیشان ئەدات.
+
+هەموو ئەم سەرچاوانە لە گەشەپێدانی ڕاستەقینەدا بەسوودن، بەو پێیەی زانیاری بەنرخ لەخۆدەگرن سەبارەت بە وردەکارییەکانی زمان، پشتگیریکردنیان و هتد.
+
+تکایە ئەم چتەنە کە تا ئێستا وتمانە لە بیرتان بمێنێ (یان ئەم لاپەڕە) بۆ ئەو کاتەی کە پێویستت بە زانیاری قووڵە لەسەر تایبەتمەندییەکی دیاریکراوتان بوو بەدڵنیایەو سەردانی ئەم لاپەڕە یا ئەو ٢ لینک سەرەوە بکەن.
+
