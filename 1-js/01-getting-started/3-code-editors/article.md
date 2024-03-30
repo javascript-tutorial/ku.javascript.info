@@ -1,49 +1,48 @@
-# Code editors
+# کۆد ئێدیتۆر
 
-A code editor is the place where programmers spend most of their time.
+کۆدئێدیتۆر ئەو شوێنەیە کە پرۆگرامەرەکان زۆربەی کاتەکانیان لە ناوی بەسەر دەبەن.
 
-There are two main types of code editors: IDEs and lightweight editors. Many people use one tool of each type.
+دوو جۆری سەرەکی کۆد ئێدیتۆرمان هەیە: IDE و کۆد ئێدیتۆر لایت(کێشی سووک). زۆر کەس هەموو جۆرە ئامرازێک بەکاردەهێنن.
 
-## IDE
 
-The term [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) (Integrated Development Environment) refers to a powerful editor with many features that usually operates on a "whole project." As the name suggests, it's not just an editor, but a full-scale "development environment."
+## ئای دی ئی یان IDE
 
-An IDE loads the project (which can be many files), allows navigation between files, provides autocompletion based on the whole project (not just the open file), and integrates with a version management system (like [git](https://git-scm.com/)), a testing environment, and other "project-level" stuff.
+زاراوەی [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) ئاماژەیە بۆ کۆد ئێدیتۆرێ بەهێز و دەوڵەمەند وە پڕ لە تایبەتمەندی کە بە شێوەیەکی گشتی لەسەر "تەواوی پڕۆژەیەک" کاردەکات.بەپێی ئەو شتە کە تا ئێسە وتمانە بۆ ئێوە دەردەکەوێت، ئەمە تەنها کۆد ئێدیتۆرێ نییە، بەڵکو "ژینگەیەکی گەشەپێدان"ی تەواوەتییە.
 
-If you haven't selected an IDE yet, consider the following options:
+ئای دی ئی پرۆژەکە باردەکات (کە دەتوانێت چەندین فایل بێت)، ڕێگە بە گەشتکردن دەدات لە نێوان فایلەکاندا، تەواوکردنی ئۆتۆماتیکی دابین دەکات لەسەر بنەمای تەواوی پڕۆژەکە (نەک تەنها فایلە کراوەکە)، و لەگەڵ سیستەمی بەڕێوەبردنی وەشانی ( وەک [git](https://git-scm.com/)) تێکەڵ دەبێت ، ژینگەیەکی تاقیکردنەوە بۆ گەشەپێدەر دەخاتە بەردەست، و بابەتەکانی "ئاستی پڕۆژە"ی تر کە بۆ پرۆگرامساز پێویستە دابنین دەکات.
 
-- [Visual Studio Code](https://code.visualstudio.com/) (cross-platform, free).
-- [WebStorm](https://www.jetbrains.com/webstorm/) (cross-platform, paid).
+ئەگەر هێشتا IDEت هەڵنەبژاردووە، ئەم بژاردانەی خوارەوە لەبەرچاو بگرە:
+- [ڤیژوئال ستۆدیۆ کۆد](https://code.visualstudio.com/)(کراس پڵەتفۆرم - بەخۆڕایی)
+- [وێب ستۆرم](https://www.jetbrains.com/webstorm/)(کراس پڵەتفۆرم - پێویستی بە کڕینی)
+  
+  بۆ ویندۆز "ڤیژوئال ستۆدیۆ"ش هەیە، نابێت لەگەڵ "ڤیژوئال ستۆدیۆ کۆد" تێکەڵ بکرێت. ڤیژوئال ستۆدیۆ کۆد ئێدیتۆر پارەدار و بەهێزی مایکرۆسافتە بۆ ویندۆز گونجاوە و کار دەکات و بۆ پلاتفۆرمی .NET بە کار دەچێت. هەروەها لە جاڤاسکڕێپتدا بە باشی پشتگیری دەکات. هەروەها وەشانی خۆڕایی [کۆمەڵگەی ڤیژوئال ستۆدیۆ](https://www.visualstudio.com/vs/community/) هەیە وە دەتوانن بە کاری بووەن.
 
-For Windows, there's also "Visual Studio", not to be confused with "Visual Studio Code". "Visual Studio" is a paid and mighty Windows-only editor, well-suited for the .NET platform. It's also good at JavaScript. There's also a free version [Visual Studio Community](https://www.visualstudio.com/vs/community/).
+زۆرێک لە IDEەکان پارەیان پێدەدرێت، بەڵام ماوەی تاقیکردنەوەیان هەیە کە بگێنە بەرچاو ڕوونیک کە بەسوودە بۆ ئێوە یا نە . بەزۆری تێچوویان کەم وێنەیە بە بەراورد بە مووچەی گەشەپێدەرێکی شارەزا، بۆیە تەنها باشترینیان بۆ خۆت هەڵبژێرە.
 
-Many IDEs are paid, but have a trial period. Their cost is usually negligible compared to a qualified developer's salary, so just choose the best one for you.
+## کۆد ئێدیتۆر  کێشی سووک
 
-## Lightweight editors
+کۆد ئێدیتۆرەکانی کێشی سووک وەک IDE بەهێز نین، بەڵام خێرا و ڕەسەن و سادەن.
 
-"Lightweight editors" are not as powerful as IDEs, but they're fast, elegant and simple.
+بە شێوەیەکی سەرەکی بۆ کردنەوەی و دەستکاریکردنی فایلێک دەستبەجێ بەکاردەهێنرێن.
 
-They are mainly used to open and edit a file instantly.
+جیاوازی سەرەکی نێوان "کۆد ئێدیتۆر سووک" و "IDE" ئەوەیە کە IDE لەسەر ئاستی پڕۆژە کاردەکات، بۆیە لە سەرەتاوە داتای زۆر زیاتر باردەکات، پێکهاتەی پڕۆژەکە شی دەکاتەوە ئەگەر پێویست بێت و هتد. ئەگەر تەنها پێویستمان بە یەک فایل بێت، کۆد ئێدیتۆر سووک زۆر خێراترە.
 
-The main difference between a "lightweight editor" and an "IDE" is that an IDE works on a project-level, so it loads much more data on start, analyzes the project structure if needed and so on. A lightweight editor is much faster if we need only one file.
+بژاردەی زۆر هەیە، بۆ نموونە: 
 
-In practice, lightweight editors may have a lot of plugins including directory-level syntax analyzers and autocompleters, so there's no strict border between a lightweight editor and an IDE.
+- [سابلایم تێکس](https://www.sublimetext.com/)(کراس پڵەتفۆرم،بەخۆڕایی)
+- [نۆتپەد++](https://notepad-plus-plus.org/)(ویندۆز، بەخۆڕایی)
+- [ڤیم](https://www.vim.org/) و [ئیمەکس](https://www.gnu.org/software/emacs/) هەروەها زۆر باشن ئەگەر بزانیت چۆن بەکاریان بهێنیت.
 
-There are many options, for instance:
+## با چیتر ئەستەم تری نەکەینەو
 
-- [Sublime Text](https://www.sublimetext.com/) (cross-platform, shareware).
-- [Notepad++](https://notepad-plus-plus.org/) (Windows, free).
-- [Vim](https://www.vim.org/) and [Emacs](https://www.gnu.org/software/emacs/) are also cool if you know how to use them.
+ئەو کۆد ئێدیتۆرەنە کە ناو لیستەکەی سەرەوە هاتنە کە یان من یان هاوڕێکانم کە  گەشەپێدەرێکی باشن، ماوەیەکی زۆرە بەکاریان هێناوە و دڵخۆش و ڕازین پێیان.
 
-## Let's not argue
+لە جیهانە گەورەکەماندا کۆد ئێدیتۆر گەورەی تریش هەن. تکایە ئەو دانە هەڵبژێرە کە زۆرترین حەزت لێیە.
 
-The editors in the lists above are those that either I or my friends whom I consider good developers have been using for a long time and are happy with.
+هەڵبژاردنی ئێدیتۆر وەک هەر ئامرازێکی تر تاکەکەسییە و بەندە بە پڕۆژە و خوو و ئارەزووی کەسیی خۆتەوە.
 
-There are other great editors in our big world. Please choose the one you like the most.
 
-The choice of an editor, like any other tool, is individual and depends on your projects, habits, and personal preferences.
+بۆچوونی کەسیی نووسەر:
+- من [Visual Studio Code](https://code.visualstudio.com/) بەکاردەهێنم ئەگەر  پەرەپێدانی Front-End بکەم.
+- ئەگەرنا   زمان/ پلاتفۆرمێکی زۆر تر بێت وەک نموونە Front-end و Back-end وە هەر دووکی خۆتان گەشەی پێ ئەدەن،  بەپێی زمانەکە، ئێدیتۆرێ تر وەک XCode (Mac)، Visual Studio (Windows) یان خێزانی Jetbrains (Webstorm، PHPStorm، RubyMine و هتد) لەبەرچاو بگرن.
 
-The author's personal opinion:
-
-- I'd use [Visual Studio Code](https://code.visualstudio.com/) if I develop mostly frontend.
-- Otherwise, if it's mostly another language/platform and partially frontend, then consider other editors, such as XCode (Mac), Visual Studio (Windows) or Jetbrains family (Webstorm, PHPStorm, RubyMine etc, depending on the language).
