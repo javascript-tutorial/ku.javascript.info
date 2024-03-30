@@ -2,6 +2,7 @@
 
 This repository hosts the translation of <https://javascript.info> in Kurdish.
 
+![Kurdistan Region Flag](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWl5M2Q4aGFscjBucHhiYWR0cGFub3MybGs4cDRwcTVmMG5zdWY1ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/nlvJsGsMwmeNIvXyW5/giphy.gif)
 
 **That's how you can contribute:**
 
