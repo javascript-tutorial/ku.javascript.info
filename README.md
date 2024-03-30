@@ -2,7 +2,8 @@
 
 This repository hosts the translation of <https://javascript.info> in Kurdish.
 
-![Kurdistan Region Flag](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWl5M2Q4aGFscjBucHhiYWR0cGFub3MybGs4cDRwcTVmMG5zdWY1ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/nlvJsGsMwmeNIvXyW5/giphy.gif)
+![Kurdistan Region Flag](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWl5M2Q4aGFscjBucHhiYWR0cGFub3MybGs4cDRwcTVmMG5zdWY1ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/nlvJsGsMwmeNIvXyW5/giphy.gif) ![Second GIF](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2F5czYyMTA0aGJrbzNwdGtxczJvZm9qOGNnaW9wOWI4ZTI2bXU4YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ws6T5PN7wHv3cY8xy8/giphy.gif)
+
 
 **That's how you can contribute:**
 
