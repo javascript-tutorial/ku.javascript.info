@@ -1,63 +1,68 @@
-# Developer console
+# کۆنسۆلی گەشەپێدەر
 
-Code is prone to errors. You will quite likely make errors... Oh, what am I talking about? You are *absolutely* going to make errors, at least if you're a human, not a [robot](https://en.wikipedia.org/wiki/Bender_(Futurama)).
+کۆدە تووشی هەڵە دەبێت. بە ئەگەرێکی زۆرەوە هەڵە دەکەن ، ئەوەی من باسی دەکەم *لانیکەم* ئەگەر مرۆڤ بیت تووشی هەڵە دەبیت لە کۆد نووسین، بەڵام ئەگەر  [ڕۆبۆت](https://en.wikipedia.org/wiki/Bender_(Futurama)). بیت دۆخەکە فەرق دەکات.
 
-But in the browser, users don't see errors by default. So, if something goes wrong in the script, we won't see what's broken and can't fix it.
+بەڵام لە وێبگەڕەکەدا بەکارهێنەران بە شێوازی پێشوەختە هەڵە نابینن. بۆیە ئەگەر شتێک لە کۆدی سکڕێپت ئێمە هەڵە بوو، ناتوانین بزانین چی هەڵەیە و ناتوانین چاکی بکەینەوە.
 
-To see errors and get a lot of other useful information about scripts, "developer tools" have been embedded in browsers.
+وێبگەڕەکان "ئامرازی گەشەپێدەر"ی ناوەکییان هەیە بۆ بینینی هەڵەکان و وەرگرتنی زانیاری زۆر بەسوود و تر سەبارەت بە سکریپتەکان.
 
-Most developers lean towards Chrome or Firefox for development because those browsers have the best developer tools. Other browsers also provide developer tools, sometimes with special features, but are usually playing "catch-up" to Chrome or Firefox. So most developers have a "favorite" browser and switch to others if a problem is browser-specific.
+زۆربەی گەشەپێدەران کرۆم یان فایەرفۆکسیان پێ باشترە بۆ پەرەپێدان چونکە ئەم وێبگەڕانە باشترین ئامرازی گەشەپێدەریان هەیە. هەروەها وێبگەڕەکانی تر ئامرازی گەشەپێدەر پێشکەش دەکەن، کە هەندێک جار تایبەتمەندی زۆر باشیان هەیە، بەڵام بەزۆری هەمان تایبەتمەندی کرۆم یان فایەرفۆکس بەکاردەهێنن.بۆیە زۆربەی گەشەپێدەران وێبگەڕێکی "دڵخواز"یان هەیە و ئەگەر کێشەکە پەیوەندی بە وێبگەڕەکەوە هەبێت، ئەوا وێبگەڕەکانی تر تاقی دەکەنەوە بۆ چارەسەرکردنی کێشەکە.
 
-Developer tools are potent; they have many features. To start, we'll learn how to open them, look at errors, and run JavaScript commands.
 
-## Google Chrome
+ئامرازەکانی گەشەپێدەر بەهێزن. چەندین تایبەتمەندییان هەیە. بۆ دەستپێکردن فێر دەبین چۆن بیانکەینەوە و  چۆن پشکنین لەسەر هەڵەکان بکەین و فەرمانەکانی جاڤاسکڕێپت جێبەجێ بکەین.
 
-Open the page [bug.html](bug.html).
+## گووگڵ کرۆم
 
-There's an error in the JavaScript code on it. It's hidden from a regular visitor's eyes, so let's open developer tools to see it.
+لاپەڕەی [bug.html](bug.html) بکەرەوە.
 
-Press `key:F12` or, if you're on Mac, then `key:Cmd+Opt+J`.
+هەڵەیەک لە کۆدی جاڤاسکڕێپتدا هەیە لەسەری. لە چاوی سەردانکەرێکی ئاسایی شاراوەتەوە، بۆیە با ئامرازەکانی گەشەپێدەر بکەینەوە بۆ بینینی.
 
-The developer tools will open on the Console tab by default.
+ئەمە کارە بکە :`key:F12` یان ئەگەر ماک بەکاردەهێنیت، `key:Cmd+Opt+J` فشار بە.
 
-It looks somewhat like this:
+ئامرازەکانی گەشەپێدەر لە تابی Console بە شێوازی پێشوەختە دەکرێنەوە.
+
+شتێکی لەم شێوەیە دەچێت:
 
 ![chrome](chrome.png)
 
-The exact look of developer tools depends on your version of Chrome. It changes from time to time but should be similar.
+دەرکەوتنی  ئامرازەکانی گەشەپێدەر بەندە بە وەشانی کرۆمەکەتەوە. جار جار دەگۆڕێت بەڵام دەبێ هاوشێوە بێت.
 
-- Here we can see the red-colored error message. In this case, the script contains an unknown "lalala" command.
-- On the right, there is a clickable link to the source `bug.html:12` with the line number where the error has occurred.
+- لێرەدا دەتوانین پەیامی هەڵەی سوور ببینین. لەم حاڵەتەدا سکریپتەکە فرمانێکی نەناسراوی "lalala" لەخۆدەگرێت.
+- لە لای ڕاستەوە بەستەرێک هەیە کە دەتوانرێت کلیک بکرێت بۆ سەرچاوەی `bug.html:12` لەگەڵ ژمارەی دێڕەکە کە هەڵەکە تێیدا ڕوویداوە.
 
-Below the error message, there is a blue `>` symbol. It marks a "command line" where we can type JavaScript commands. Press `key:Enter` to run them.
+لە خوارەوەی پەیامی هەڵەکە ئایکۆنێکی شین `>` هەیە. ئەمەش "هێڵی فەرمان" دیاری دەکات کە دەتوانین فەرمانەکانی جاڤاسکڕێپت تێیدا بنووسین.`key:Enter` فشار بە بۆ ئەوە جێبەجێ بێت.
 
-Now we can see errors, and that's enough for a start. We'll come back to developer tools later and cover debugging more in-depth in the chapter <info:debugging-chrome>.
+ئێستا دەتوانین هەڵەکان ببینین و ئەوە بەسە بۆ دەستپێکردن.دواتر دەگەڕێینەوە سەر ئامرازەکانی گەشەپێدەر و لە بەشی <info:debugging-chrome> دەچینە ناو چاککردنەوەی زیاتر.
+
 
 ```smart header="Multi-line input"
-Usually, when we put a line of code into the console, and then press `key:Enter`, it executes.
+بەزۆری کاتێک جێبەجێ دەکرێت کە دێڕێکی کۆد دەخەینە ناو کۆنسۆڵەکەوە و پاشان `کلیلی :Enter` دادەگرین.
 
-To insert multiple lines, press `key:Shift+Enter`. This way one can enter long fragments of JavaScript code.
+بۆ دانانی چەندین دێڕ،` Shift+Enter` فشار بە. بەم شێوەیە دەتوانرێت پارچە درێژەکانی کۆدی جاڤاسکڕێپت بخرێتە ناوەوە.
 ```
 
-## Firefox, Edge, and others
+## فایەرفۆکس و ئێدج و ئەوانی تر
 
-Most other browsers use `key:F12` to open developer tools.
+زۆربەی وێبگەڕەکانی تر `key:F12` بەکاردەهێنن بۆ کردنەوەی ئامرازەکانی گەشەپێدەر.
 
-The look & feel of them is quite similar. Once you know how to use one of these tools (you can start with Chrome), you can easily switch to another.
+ڕوخسار و هەستیان بە تەواوی وەک یەک. کاتێک زانیت چۆن یەکێک لەم ئامرازانە بەکاربهێنیت (دەتوانیت لە کرۆمەوە دەست پێبکەیت)، دەتوانیت بە ئاسانی لەگەڵ ئامرازەکانی تر ڕابێیت چونکە هەموویان هەمان بناغە و پێکهاتە بەکاردەهێنن.
 
-## Safari
+## سەفاری
 
-Safari (Mac browser, not supported by Windows/Linux) is a little bit special here. We need to enable the "Develop menu" first.
+سەفاری (کە لەلایەن ویندۆز/لینوکسەوە پشتگیری ناکرێ) لێرەدا کەمێک تایبەتە. سەرەتا پێویستە "مێنۆی پەرەپێدان" چالاک بکەین.
 
-Open Preferences and go to the "Advanced" pane. There's a checkbox at the bottom:
+Preferences بکەرەوە و بچۆ بۆ لاپەڕەی "Advanced". لە خوارەوە بۆکسێکی هەڵبژاردن هەیە:
 
 ![safari](safari.png)
 
-Now `key:Cmd+Opt+C` can toggle the console. Also, note that the new top menu item named "Develop" has appeared. It has many commands and options.
 
-## Summary
+شۆرتکات `key:Cmd+Opt+C` ئێستا دەتوانێت کۆنسۆڵەکە بگۆڕێت. هەروەها تێبینی بکە کە بابەتی نوێی سەرەوەی مینیو بە ناوی "Develop" دەرکەوتووە. چەندین فەرمان و بژاردەی هەیە.
 
-- Developer tools allow us to see errors, run commands, examine variables, and much more.
-- They can be opened with `key:F12` for most browsers on Windows. Chrome for Mac needs `key:Cmd+Opt+J`, Safari: `key:Cmd+Opt+C` (need to enable first).
 
-Now we have the environment ready. In the next section, we'll get down to JavaScript.
+## پوختە
+
+- ئامرازەکانی گەشەپێدەر ڕێگەمان پێدەدەن هەڵەکان ببینین، فەرمانەکان جێبەجێ بکەین، گۆڕاوەکان بپشکنین و زۆر شتی تر.
+- دەتوانرێت بە `key:F12` بۆ زۆربەی وێبگەڕەکانی ویندۆز بکرێتەوە. کرۆم بۆ ماک پێویستی بە `کلیل:Cmd+Opt+J` هەیە، سەفاری: `کلیل: Cmd+Opt+C` (پێویستە سەرەتا چالاک بکرێت).
+
+
+ئێستا ژینگەمان ئامادە کردووە. لە بەشی داهاتوودا باس لە جاڤاسکڕێپت دەکەین.
