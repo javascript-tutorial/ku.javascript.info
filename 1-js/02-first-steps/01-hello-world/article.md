@@ -1,17 +1,14 @@
-# Hello, world!
+# سڵاو جیهان!
 
-This part of the tutorial is about core JavaScript, the language itself.
+ئەم بەشەی فێرکارییەکە باس لە ناوەکی جاڤاسکڕێپت دەکات.
 
-But we need a working environment to run our scripts and, since this book is online, the browser is a good choice. We'll keep the amount of browser-specific commands (like `alert`) to a minimum so that you don't spend time on them if you plan to concentrate on another environment (like Node.js). We'll focus on JavaScript in the browser in the [next part](/ui) of the tutorial.
-
-So first, let's see how we attach a script to a webpage. For server-side environments (like Node.js), you can execute the script with a command like `"node my.js"`.
+بەڵام ئێمە پێویستمان بە ژینگەیەکی کارکردنە بۆ بەڕێوەبردنی سکریپتەکانمان و بەو پێیەی ئەم فێرکارییە ئۆنلاینە، وێبگەڕە هەڵبژاردەیەکی باشە. ئێمە بڕی فەرمانە تایبەتەکانی وێبگەڕ کەم دەکەینەوە (وەک `alert`) بۆ ئەوەی کاتی ئێوە بەفیڕۆ نەچێت ئەگەر بڕیارە سەرنجت لەسەر ژینگەیەکی تر بێت (وەک Node.js) ئەم فێرکارییە سەبارەت بە Node.js نییە بەڵام فێربوونی بناغە و بنچینەکانی خودێ جاڤاسکڕێپت بەدڵنیایەو یارمەتی دەریی تۆ دەبێ لە داهاتوو ئەگەر ویستت Node.js فێربیت. ئێمە لە فێرکاری [داهاتوو](/ui) دا سەرنج قووڵتر دەخەینە سەر جاڤاسکڕێپت لە وێبگەڕەکانە. کەواتە سەرەتا با بزانین چۆن سکریپتێک بە لاپەرێکی وێبەو هاوپێچ بکەین. بۆ ژینگەکانی لای سێرڤەر (وەک Node.js)، دەتوانیت سکریپتەکە بە فەرمانێکی وەک `node my.js` جێبەجێ بکەیت.
 
 
-## The "script" tag
 
-JavaScript programs can be inserted almost anywhere into an HTML document using the `<script>` tag.
+## تەگ ئێسکریپت
 
-For instance:
+دەتوانرێت بەرنامەکانی جاڤاسکڕێپت لە نزیکەی هەر شوێنێکی بەڵگەنامەیەکی HTML دا بە بەکارهێنانی تاگی `<script>` دابنرێت.
 
 ```html run height=100
 <!DOCTYPE HTML>
@@ -23,7 +20,7 @@ For instance:
 
 *!*
   <script>
-    alert( 'Hello, world!' );
+    alert( 'سڵاو  ، جیهان' );
   </script>
 */!*
 
@@ -35,10 +32,10 @@ For instance:
 ```
 
 ```online
-You can run the example by clicking the "Play" button in the right-top corner of the box above.
+دەتوانیت نموونەکە بەڕێوەببەیت بە کرتەکردن لەسەر دوگمەی "Play" لە گۆشەی سەرەوەی لای ڕاستی بۆکسەکەی سەرەوە.
 ```
 
-The `<script>` tag contains JavaScript code which is automatically executed when the browser processes the tag.
+تاگی `<script>` کۆدی جاڤاسکڕێپتی تێدایە کە بە شێوەیەکی ئۆتۆماتیکی جێبەجێ دەکرێت کاتێک وێبگەڕ تاگەکە پرۆسێس دەکات.
 
 
 ## Modern markup
