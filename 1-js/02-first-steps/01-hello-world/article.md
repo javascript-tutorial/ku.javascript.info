@@ -38,18 +38,23 @@
 تاگی `<script>` کۆدی جاڤاسکڕێپتی تێدایە کە بە شێوەیەکی ئۆتۆماتیکی جێبەجێ دەکرێت کاتێک وێبگەڕ تاگەکە پرۆسێس دەکات.
 
 
-## Modern markup
+## نووسینی مۆدێرن
 
-The `<script>` tag has a few attributes that are rarely used nowadays but can still be found in old code:
+تاگی `<script>` چەند تایبەتمەندییەکی هەیە کە ئەمڕۆ بە دەگمەن بەکاردەهێنرێن، بەڵام هێشتا لە کۆدی کۆنتردا دەبینرێن
 
-The `type` attribute: <code>&lt;script <u>type</u>=...&gt;</code>
-: The old HTML standard, HTML4, required a script to have a `type`. Usually it was `type="text/javascript"`. It's not required anymore. Also, the modern HTML standard totally changed the meaning of this attribute. Now, it can be used for JavaScript modules. But that's an advanced topic, we'll talk about modules in another part of the tutorial.
+تایبەتمەندی `جۆر`: <code>&lt;script <u>type</u>=...&gt;</code>
 
-The `language` attribute: <code>&lt;script <u>language</u>=...&gt;</code>
-: This attribute was meant to show the language of the script. This attribute no longer makes sense because JavaScript is the default language. There is no need to use it.
+: ستانداردە کۆنەکەی HTML، HTML4، پێویستی بە سکریپتێک هەبوو کە `جۆر`ی هەبێت. بەزۆری `type="text/javascript` بوو. ئیتر پێویست ناکات.هەروەها ستانداردی مۆدێرن HTML مانای ئەم تایبەتمەندییەی بەتەواوەتی گۆڕی. ئێستا دەتوانرێت بۆ مۆدیولەکانی جاڤاسکڕێپت بەکاربهێنرێت. بەڵام ئەمە بابەتێکی پێشکەوتووە، لە بەشێکی تری فێرکاریەکەدا باسی مۆدیولەکان دەکەین.
 
-Comments before and after scripts.
-: In really ancient books and guides, you may find comments inside `<script>` tags, like this:
+تایبەتمەندی `زمان`: <code>&lt;script <u>language</u>=...&gt;</code>
+
+: ئەم تایبەتمەندییە بۆ پیشاندانی زمانی سکریپت بوو. ئەم تایبەتمەندییە چیتر مانای نییە چونکە جاڤاسکڕێپت زمانی پێشوەختەیە. پێویست بە بەکارهێنانی ناکات.
+
+
+کۆمێنتەکانی پێش و دوای سکڕێپتەکە.
+
+
+: لە کتێب و دەستنووسی بەڕاستی کۆنەکاندا، ڕەنگە کۆمێنتەکان لەناو تاگەکانی `<script>`دا بدۆزیتەوە، بەم شێوەیە:
 
     ```html no-beautify
     <script type="text/javascript"><!--
@@ -57,28 +62,28 @@ Comments before and after scripts.
     //--></script>
     ```
 
-    This trick isn't used in modern JavaScript. These comments hide JavaScript code from old browsers that didn't know how to process the `<script>` tag. Since browsers released in the last 15 years don't have this issue, this kind of comment can help you identify really old code.
+    ئەم فێڵە لە جاڤاسکڕێپتی مۆدێرن بەکارناهێنرێت. ئەم کۆمێنتانە کۆدی جاڤاسکڕێپت لە وێبگەڕە کۆنەکان دەشارنەوە کە نەیاندەزانی چۆن تاگی `<script> `پرۆسێس بکەن. بەو پێیەی ئەو وێبگەڕانەی لە ١٥ ساڵی ڕابردوودا بڵاوکراونەتەوە ئەم کێشەیەیان نییە، ئەم جۆرە کۆمێنتە دەتوانێت یارمەتیت بدات بۆ ناسینەوەی کۆدی بەڕاستی کۆن.
 
 
-## External scripts
+## سکریپتە دەرەکییەکان
 
-If we have a lot of JavaScript code, we can put it into a separate file.
+ئەگەر کۆدی جاڤاسکڕێپتێکی زۆرمان هەبێت دەتوانین بیخەینە فایلێکی جیا.
 
-Script files are attached to HTML with the `src` attribute:
+فایلەکانی سکریپت بە تایبەتمەندی `src` دەخرێنە پاڵ HTML:
 
 ```html
 <script src="/path/to/script.js"></script>
 ```
 
-Here, `/path/to/script.js` is an absolute path to the script from the site root. One can also provide a relative path from the current page. For instance, `src="script.js"`, just like `src="./script.js"`, would mean a file `"script.js"` in the current folder.
+لێرەدا، `/path/to/script.js` ڕێڕەوێکی ڕەهایە بۆ سکریپتەکە لە ڕەگی ماڵپەڕەکەوە. هەروەها دەتوانرێت ڕێڕەوێکی ڕێژەیی لە لاپەڕەی ئێستاوە دابین بکرێت. بۆ نموونە، `src="script.js"`، هەروەک چۆن `src="./script.js"`، بە واتای پەڕگەی `script.js` لە فۆلدری ئێستادا.
 
-We can give a full URL as well. For instance:
+هەروەها دەتوانین URL ێکی تەواو بدەین. بۆ نموونە:
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.js"></script>
 ```
 
-To attach several scripts, use multiple tags:
+بۆ هاوپێچکردنی چەندین سکریپت، چەندین تاگ بەکاربهێنە:
 
 ```html
 <script src="/js/script1.js"></script>
@@ -87,29 +92,31 @@ To attach several scripts, use multiple tags:
 ```
 
 ```smart
-As a rule, only the simplest scripts are put into HTML. More complex ones reside in separate files.
+وەک یاسایەک تەنها سادەترین سکریپتەکان لە HTML دادەنرێت. ئەوانەی ئاڵۆزترن لە فایلە جیاوازەکاندان.
 
-The benefit of a separate file is that the browser will download it and store it in its [cache](https://en.wikipedia.org/wiki/Web_cache).
+سوودی فایلێکی جیا ئەوەیە کە وێبگەڕەکە دایبەزێنێت و لە کەشی خۆیدا  هەڵیدەگرێت.
 
-Other pages that reference the same script will take it from the cache instead of downloading it, so the file is actually downloaded only once.
+لاپەڕەکانی تر کە ئاماژە بە هەمان سکریپت دەکەن لەبری دابەزاندنی لە کاشەوە دەیهێنن، بۆیە لە ڕاستیدا فایلەکە تەنها یەکجار دابەزێنرێت.
 
-That reduces traffic and makes pages faster.
+کە ترافیکی کەم دەکاتەوە و پەیجەکان خێراتر دەکات.
+
 ```
 
-````warn header="If `src` is set, the script content is ignored."
-A single `<script>` tag can't have both the `src` attribute and code inside.
+````نوکتە:warn header="ئەگەر `src` دانرابێت، ناوەڕۆکی سکریپت پشتگوێ دەخرێت."
 
-This won't work:
+تاگی `<script>` ناتوانێت هەم تایبەتمەندی "src" و هەم کۆدی ناوەوەی هەبێت.
+
+ئەمەش کار ناکات:
 
 ```html
 <script *!*src*/!*="file.js">
-  alert(1); // the content is ignored, because src is set
+  alert(1); // ناوەڕۆک پشتگوێ دەخرێت چونکە src دانراوە
 </script>
 ```
 
-We must choose either an external `<script src="…">` or a regular `<script>` with code.
+دەبێت `<script src="...”>` دەرەکی یان `<script>` ی ئاسایی بە کۆدەوە هەڵبژێرین.
 
-The example above can be split into two scripts to work:
+نموونەی سەرەوە دەتوانرێت دابەش بکرێت بۆ دوو سکریپت بۆ کارکردن لەگەڵی:
 
 ```html
 <script src="file.js"></script>
@@ -119,11 +126,14 @@ The example above can be split into two scripts to work:
 ```
 ````
 
-## Summary
+## پوختە
 
-- We can use a `<script>` tag to add JavaScript code to a page.
-- The `type` and `language` attributes are not required.
-- A script in an external file can be inserted with `<script src="path/to/script.js"></script>`.
+- دەتوانین تاگی "<script>" بەکاربهێنین بۆ زیادکردنی کۆدی جاڤاسکڕێپت بۆ لاپەڕەکە.
+
+- سیفاتەکانی `جۆر` و `زمان` پێویست نین.
+
+- دەتوانرێت سکریپتێک لە پەڕگەیەکی دەرەکیدا لەگەڵ "<script src="path/to/script.js"></script>"دا جێگیر بکرێت.
 
 
-There is much more to learn about browser scripts and their interaction with the webpage. But let's keep in mind that this part of the tutorial is devoted to the JavaScript language, so we shouldn't distract ourselves with browser-specific implementations of it. We'll be using the browser as a way to run JavaScript, which is very convenient for online reading, but only one of many.
+زۆر شتی تر هەیە بۆ فێربوون دەربارەی سکریپتەکانی وێبگەڕ و کارلێککردنیان لەگەڵ وێب پەیجێک. بەڵام با ئەوەمان لەبەرچاو بێت کە ئەم بەشەی فێرکارییەکە تایبەتە بە زمانی جاڤاسکڕێپت، بۆیە نابێت گیرۆدەی جێبەجێکردنی تایبەت بە وێبگەڕ بین. ئێمە وێبگەڕەکە وەک ڕێگەیەک بۆ بەڕێوەبردنی جاڤاسکڕێپت بەکاردەهێنین کە فێربوونی ئاسانە، بەڵام تەنها یەکێکە لە چەندین ڕێگا.
+
