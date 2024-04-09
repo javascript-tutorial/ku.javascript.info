@@ -1,44 +1,44 @@
-# Code structure
+# پێکهاتەی کۆد
 
-The first thing we'll study is the building blocks of code.
+یەکەم شت کە لێی دەکۆڵینەوە، بنەماکانی بنیاتنانی کۆدە.
 
-## Statements
+## ستەیمێنت
 
-Statements are syntax constructs and commands that perform actions.
+بەیاننامەکان بریتین لە پێکهاتە و فەرمانەکان کە کردارەکان ئەنجام دەدەن.
 
-We've already seen a statement, `alert('Hello, world!')`, which shows the message "Hello, world!".
+پێشتر دەستەواژەی `alert('سڵاو,جیهان!')`مان بینیوە کە پەیامی "سڵاو، جیهان!" نیشان دەدات.
 
-We can have as many statements in our code as we want. Statements can be separated with a semicolon.
+دەتوانین چەند فەرمانمان هەبێت لە کۆدەکانماندا. دەربڕینەکان دەتوانرێت بە سێمیکالۆن جیا بکرێتەوە.
 
-For example, here we split "Hello World" into two alerts:
-
-```js run no-beautify
-alert('Hello'); alert('World');
-```
-
-Usually, statements are written on separate lines to make the code more readable:
+بۆ نموونە لێرەدا "سڵاو جیهان" دابەش دەکەین بۆ دوو ئاگادارکردنەوە:
 
 ```js run no-beautify
-alert('Hello');
-alert('World');
+alert('سڵام'); alert('جەهان');
 ```
 
-## Semicolons [#semicolon]
-
-A semicolon may be omitted in most cases when a line break exists.
-
-This would also work:
+دەربڕینەکان بەزۆری لەسەر دێڕی جیاواز دەنووسرێن بۆ ئەوەی کۆدەکە باشتر بخوێنرێتەوە:
 
 ```js run no-beautify
-alert('Hello')
-alert('World')
+alert('سڵام');
+alert('جیهان');
 ```
 
-Here, JavaScript interprets the line break as an "implicit" semicolon. This is called an [automatic semicolon insertion](https://tc39.github.io/ecma262/#sec-automatic-semicolon-insertion).
+## نیمچە کۆلۆن [#semicolon]
 
-**In most cases, a newline implies a semicolon. But "in most cases" does not mean "always"!**
+کاتێک هێڵ شکاندن هەبێت، ڕەنگە لە زۆربەی حاڵەتەکاندا نیمچە کۆلۆنەکە نەهێڵرێت.
 
-There are cases when a newline does not mean a semicolon. For example:
+ئەمەش کاردەکات:
+
+```js run no-beautify
+alert('سڵاو')
+alert('جیهان')
+```
+
+لێرەدا جاڤاسکڕێپت دێڕشکێنەکە وەک نیمچە کۆلۆنێکی `ناڕاستەوخۆ` لێکدەداتەوە. ئەمەش پێی دەوترێت [خزاندنی نیمچە کۆلۆنی ئۆتۆماتیکی](https://tc39.github.io/ecma262/#sec-automatic-semicolon-insertion).
+
+**لە زۆربەی حاڵەتەکاندا هێڵی نوێ بە واتای نیمچە کۆلۆن دێت. بەڵام "لە زۆربەی حاڵەتەکاندا" بە مانای "هەمیشە" نایەت!**
+
+حاڵەت هەیە کە هێڵی نوێ بە مانای نیمچە کۆلۆن نییە. بۆ نموونە:
 
 ```js run no-beautify
 alert(3 +
@@ -46,14 +46,14 @@ alert(3 +
 + 2);
 ```
 
-The code outputs `6` because JavaScript does not insert semicolons here. It is intuitively obvious that if the line ends with a plus `"+"`, then it is an "incomplete expression", so a semicolon there would be incorrect. And in this case, that works as intended.
+کۆدەکە `6` دەردەچێت چونکە جاڤاسکڕێپت لێرەدا نیمچە کۆلۆن ناخاتە ناوەوە.لە ڕووی ئینتێستیڤەوە ڕوونە کە ئەگەر هێڵەکە بە نیشانەی پڵەس `"+"` کۆتایی پێبێت، ئەوە دەربڕینێکی ناتەواوە، بۆیە نیمچە کۆلۆنەکەی ئەوێ هەڵەیە. وە لەم حاڵەتەدا، وەکو مەبەستی خۆی کاردەکات.
 
-**But there are situations where JavaScript "fails" to assume a semicolon where it is really needed.**
+**بەڵام دۆخێک هەیە کە جاڤاسکڕێپت ناتوانێت گریمانە بکات کە نیمچە کۆلۆنێک بێت لەو شوێنانەی کە لە ڕاستیدا پێویستی پێیەتی.**
 
-Errors which occur in such cases are quite hard to find and fix.
+دۆزینەوە و چاککردنی ئەو هەڵانەی کە لەم جۆرە حاڵەتانەدا ڕوودەدەن زۆر ئەستەمە.
 
 ````smart header="An example of an error"
-If you're curious to see a concrete example of such an error, check this code out:
+ئەگەر کنجکاویت بۆ بینینی نموونەیەکی هەڵەیەکی لەو جۆرە، ئەم کۆدە ببینە:
 
 ```js run
 alert("Hello");
@@ -61,9 +61,9 @@ alert("Hello");
 [1, 2].forEach(alert);
 ```
 
-No need to think about the meaning of the brackets `[]` and `forEach` yet. We'll study them later. For now, just remember the result of running the code: it shows `Hello`, then `1`, then `2`.
+هێشتا پێویست ناکات بیر لە مانای کەوانەکانی `"[]"` و `"forEach"` بکەینەوە. دواتر لێیان دەکۆڵینەوە. بۆ ئێستا تەنها ئەنجامی جێبەجێکردنی کۆدەکە لەبیرت بێت: `"Hello"`، پاشان `"1"`، پاشان `"2"` پیشان دەدات.
 
-Now let's remove the semicolon after the `alert`:
+ئێستا با نیمچە کۆلۆنەکە لە دوای "ئاگادارکردنەوە" لاببەین:
 
 ```js run no-beautify
 alert("Hello")
@@ -71,36 +71,36 @@ alert("Hello")
 [1, 2].forEach(alert);
 ```
 
-The difference compared to the code above is only one character: the semicolon at the end of the first line is gone.
+جیاوازی بەراورد بەو کۆدەی سەرەوە تەنها یەک پیتە: نیمچە کۆلۆنەکە لە کۆتایی دێڕی یەکەمدا نەماوە.
 
-If we run this code, only the first `Hello` shows (and there's an error, you may need to open the console to see it). There are no numbers any more.
+ئەگەر ئەم کۆدە جێبەجێ بکەین تەنها یەکەم `"Hello"` پیشان دەدرێت (و هەڵەیەک هەیە، لەوانەیە پێویستت بە کردنەوەی کۆنسۆڵەکە بێت بۆ بینینی). ئیتر ژمارە نەماوە.
 
-That's because JavaScript does not assume a semicolon before square brackets `[...]`. So, the code in the last example is treated as a single statement.
+ئەمەش لەبەر ئەوەیە کە جاڤاسکڕێپت چاوەڕوانی نیمچە کۆلۆن ناکات پێش کەوانە "[...]". بۆیە کۆدەکانی کۆتا نموونە وەک یەک فرمان مامەڵەی لەگەڵ دەکرێت.
 
-Here's how the engine sees it:
+لێرەدا بزوێنەرەکەی چۆنە:
 
 ```js run no-beautify
 alert("Hello")[1, 2].forEach(alert);
 ```
 
-Looks weird, right? Such merging in this case is just wrong. We need to put a semicolon after `alert` for the code to work correctly.
+سەیرە، ڕاستە؟ یەکگرتنێکی لەو شێوەیە لەم حاڵەتەدا تەنها هەڵەیە. بۆ ئەوەی کۆدەکە بە دروستی کار بکات، پێویستە دوای `"alert"` نیمچە کۆلۆن دابنێین.
 
-This can happen in other situations also.
+ئەمەش دەتوانێت لە بارودۆخی دیکەشدا ڕووبدات.
 ````
 
-We recommend putting semicolons between statements even if they are separated by newlines. This rule is widely adopted by the community. Let's note once again -- *it is possible* to leave out semicolons most of the time. But it's safer -- especially for a beginner -- to use them.
+پێشنیار دەکەین نیوە کۆلۆن لە نێوان فرمانەکاندا دابنێیت تەنانەت ئەگەر بە هێڵی نوێ جیا بکرێنەوە. ئەم یاسایە بە شێوەیەکی بەرفراوان لەلایەن کۆمەڵگاوە قبوڵکراوە. با دووبارە تێبینی بکەین -- *دەکرێ* زۆربەی کات نیمچە کۆلۆنەکە نەهێڵرێت. بەڵام سەلامەتترن بۆ بەکارهێنان - بە تایبەت بۆ کەسانی سەرەتایی.
 
-## Comments [#code-comments]
+## کۆمێنتەکان [#code-comments]
 
-As time goes on, programs become more and more complex. It becomes necessary to add *comments* which describe what the code does and why.
+بە تێپەڕبوونی کات بەرنامەکان ئاڵۆزتر دەبن. زیادکردنی *کۆمێنت* کە ڕوونی بکاتەوە کە کۆدەکە چی دەکات و بۆچی زۆر گرنگە.
 
-Comments can be put into any place of a script. They don't affect its execution because the engine simply ignores them.
+دەتوانرێت کۆمێنتەکان لە هەر شوێنێکی سکریپتێکدا دابنرێت. کاریگەرییان لەسەر جێبەجێکردنی نییە چونکە بزوێنەرەکە تەنها پشتگوێیان دەخات.
 
-**One-line comments start with two forward slash characters `//`.**
+**کۆمێنتەکانی یەک دێڕ بە دوو کاراکتەری ئێسلەش دەست پێدەکات`//`.**
 
-The rest of the line is a comment. It may occupy a full line of its own or follow a statement.
+باقی دێڕەکە بۆچوونێکە. لەوانەیە دێڕێکی تەواو داگیر بکات یان دوای لێدوانێک بێت.
 
-Like here:
+وەک لێرە:
 ```js run
 // This comment occupies a line of its own
 alert('Hello');
@@ -108,7 +108,7 @@ alert('Hello');
 alert('World'); // This comment follows the statement
 ```
 
-**Multiline comments start with a forward slash and an asterisk <code>/&#42;</code> and end with an asterisk and a forward slash <code>&#42;/</code>.**
+**سەرنجە فرە هێڵەکان بە هێڵی پێشەوە یا ئێسلەش و ئەستێرە <code>/&#42;</code> دەست پێدەکات و بە ئەستێرە و هێڵی پێشەوە <code>&#42;/</code> کۆتایی دێت.**
 
 Like this:
 
@@ -120,9 +120,9 @@ alert('Hello');
 alert('World');
 ```
 
-The content of comments is ignored, so if we put code inside <code>/&#42; ... &#42;/</code>, it won't execute.
+ناوەڕۆکی کۆمێنت پشتگوێ دەخرێت، بۆیە ئەگەر کۆدەکە بخەیتە ناو <code>/&#42; ... &#42;/</code>، کارناکات.
 
-Sometimes it can be handy to temporarily disable a part of code:
+هەندێک جار دەتوانێت بەسوود بێت بەشێک لە کۆدەکە بۆ ماوەیەکی کاتی لەکاربخەیت:
 
 ```js run
 /* Commenting out the code
@@ -132,13 +132,14 @@ alert('World');
 ```
 
 ```smart header="Use hotkeys!"
-In most editors, a line of code can be commented out by pressing the `key:Ctrl+/` hotkey for a single-line comment and something like `key:Ctrl+Shift+/` -- for multiline comments (select a piece of code and press the hotkey). For Mac, try `key:Cmd` instead of `key:Ctrl` and `key:Option` instead of `key:Shift`.
+لە زۆربەی دەستکاریکەرەکاندا دەتوانرێت دێڕێکی کۆد بکرێتەوە بە فشاردان لەسەر کلیلی گەرمی "key:Ctrl+/" بۆ کۆمێنتێکی تاکە دێڕ و شتێکی وەک "key:Ctrl+Shift+/" - بۆ سەرنجە فرە دێڕییەکان (پارچە کۆدێک هەڵبژێرە ).
+بۆ ماک لەبری "key:Ctrl" "key:Cmd" و لەبری "key:Shift" "key:Option" تاقی بکەرەوە.
 ```
 
 ````warn header="Nested comments are not supported!"
-There may not be `/*...*/` inside another `/*...*/`.
+"/*...*/" لەوانەیە لە "/*...*/" ی تردا بوونی نەبێت.
 
-Such code will die with an error:
+ئەم جۆرە کۆدە بە هەڵەیەک شکست دەهێنێت:
 
 ```js run no-beautify
 /*
@@ -148,8 +149,8 @@ alert( 'World' );
 ```
 ````
 
-Please, don't hesitate to comment your code.
+تکایە دوودڵ مەبن لە کۆمێنتی کۆدەکانتان.
 
-Comments increase the overall code footprint, but that's not a problem at all. There are many tools which minify code before publishing to a production server. They remove comments, so they don't appear in the working scripts. Therefore, comments do not have negative effects on production at all.
+کۆمێنتەکان شوێنپێی گشتی کۆدەکە زیاد دەکەن، بەڵام ئەوە بە هیچ شێوەیەک کێشە نییە. زۆر ئامراز هەیە کە کۆدەکان بچووک دەکەنەوە پێش ئەوەی بڵاوی بکەنەوە بۆ سێرڤەری بەرهەمهێنان. کۆمێنتەکان لادەبەن، بۆیە لە سکریپتە کارکەرەکاندا دەرناکەون. بۆیە کۆمێنتەکان بە هیچ شێوەیەک کاریگەری نەرێنی لەسەر بەرهەمهێنان نییە.
 
-Later in the tutorial there will be a chapter <info:code-quality> that also explains how to write better comments.
+دواتر لە فێرکارییەکەدا بابەتی <info:code-quality> دەبێت کە هەروەها چۆنیەتی نووسینی کۆمێنتی باشتر ڕوون دەکاتەوە.
