@@ -72,6 +72,7 @@
 
 - جاڤاسکڕێپت لە وێب پەڕێکدا لەوانەیە فایلە ئارەزوومەندانە لەسەر هارد دیسکەکە بخوێنێتەوە/بنووسێت، کۆپییان بکات، یان بەرنامەکان ئێجرابکات. دەستڕاگەیشتنێکی ڕاستەوخۆی بە زۆر شتی گرنگی سیستەمی کارپێکردن نییە.
 
+<<<<<<< HEAD
     وێبگەڕە مۆدێرنەکان ڕێگەی پێدەدەن کار لەگەڵ فایلەکاندا بکات، بەڵام دەستڕاگەیشتن سنووردارە و تەنها لەو کاتەدا دابین دەکرێت کە بەکارهێنەر هەندێک کردار ئەنجام بدات، وەک "خستنەناو" فایلێک بۆ ناو پەنجەرەی وێبگەڕەکە یان هەڵبژاردنی لە ڕێگەی تاگی `<input>` .
 
     ڕێگا هەیە بۆ کارلێککردن لەگەڵ کامێرا/مایکرۆفۆن و ئامێرەکانی تر، بەڵام پێویستیان بە مۆڵەتی بەکارهێنەری ڕوون هەیە. کەواتە لاپەڕەیەک کە جاڤاسکڕێپتی هەبێت ڕەنگە بە نهێنی کامێرای وێب چالاک نەکات و دەوروبەرەکەی نەبینێت و زانیاری بۆ [NSA](https://ckb.wikipedia.org/wiki/%D8%AF%DB%95%D8%B2%DA%AF%D8%A7%DB%8C_%D8%A6%D8%A7%D8%B3%D8%A7%DB%8C%D8%B4%DB%8C_%D9%86%DB%95%D8%AA%DB%95%D9%88%DB%95%DB%8C%DB%8C) نەنێرێت.
@@ -86,6 +87,10 @@
 
  
 - جاڤاسکڕێپت دەتوانێت بە ئاسانی لە ڕێگەی تۆڕەوە پەیوەندی لەگەڵ ئەو سێرڤەرە بکات کە لاپەڕەی ئێستا لێیەوە هاتووە.بەڵام توانای وەرگرتنی زانیاری لە سایت/دۆمەینەکانی ترەوە پەککەوتووە.هەرچەندە دەکرێت، بەڵام پێویستی بە ڕێککەوتنی ڕوون هەیە (بە سەردێڕی HTTP ) لە لایەنی دوورەوە. جارێکی تریش ئەمە سنووردارکردنی ئەمنە بۆ بەکارهێنەرەکان.
+=======
+    This limitation is, again, for the user's safety. A page from `http://anysite.com` which a user has opened must not be able to access another browser tab with the URL `http://gmail.com`, for example, and steal information from there.
+- JavaScript can easily communicate over the net to the server where the current page came from. But its ability to receive data from other sites/domains is severely limited. Though possible, it requires explicit agreement (expressed in HTTP headers) from the remote side. Once again, that's a safety limitation.
+>>>>>>> 20208769e528337949e946f526534d61d38bac47
 
 ![](limitations.svg)
 
